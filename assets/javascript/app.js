@@ -1,5 +1,7 @@
+"use strict";
+
 const app = {
-  "tarotDeck": {
+  "tarotDeckObj": {
                 "1": {
                   "name": "The Fool",
                   "imagePath": "./assets/images/cards/",
@@ -10,7 +12,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "2": {
                   "name": "The Magician",
@@ -22,7 +24,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "3": {
                   "name": "The High Priestess",
@@ -34,7 +36,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "4": {
                   "name": "The Empress",
@@ -46,7 +48,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "5": {
                   "name": "The Emperor",
@@ -58,7 +60,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "6": {
                   "name": "The Hierophant",
@@ -70,7 +72,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "7": {
                   "name": "The Lovers",
@@ -82,7 +84,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "8": {
                   "name": "The Chariot",
@@ -94,7 +96,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "9": {
                   "name": "Strength",
@@ -106,7 +108,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "10": {
                   "name": "The Hermit",
@@ -118,7 +120,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "11": {
                   "name": "Wheel of Fortune",
@@ -130,7 +132,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "12": {
                   "name": "Justice",
@@ -142,7 +144,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "13": {
                   "name": "The Hanged Man",
@@ -154,7 +156,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "14": {
                   "name": "Death",
@@ -166,7 +168,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "15": {
                   "name": "Temperance",
@@ -178,7 +180,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "16": {
                   "name": "The Devil",
@@ -190,7 +192,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "17": {
                   "name": "The Tower",
@@ -202,7 +204,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "18": {
                   "name": "The Star",
@@ -214,7 +216,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "19": {
                   "name": "The Moon",
@@ -226,7 +228,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "20": {
                   "name": "The Sun",
@@ -238,7 +240,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "21": {
                   "name": "Judgement",
@@ -250,7 +252,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "22": {
                   "name": "The World",
@@ -262,7 +264,7 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "23": {
                   "name": "Ace of Wands",
@@ -274,7 +276,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "24": {
                   "name": "Two of Wands",
@@ -286,7 +288,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "25": {
                   "name": "Three of Wands",
@@ -298,7 +300,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "26": {
                   "name": "Four of Wands",
@@ -310,7 +312,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "27": {
                   "name": "Five of Wands",
@@ -322,7 +324,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "28": {
                   "name": "Six of Wands",
@@ -334,7 +336,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "29": {
                   "name": "Seven of Wands",
@@ -346,7 +348,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "30": {
                   "name": "Eight of Wands",
@@ -358,7 +360,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "31": {
                   "name": "Nine of Wands",
@@ -370,7 +372,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "32": {
                   "name": "Ten of Wands",
@@ -382,7 +384,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "33": {
                   "name": "Page of Wands",
@@ -394,7 +396,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "34": {
                   "name": "Knight of Wands",
@@ -406,7 +408,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "35": {
                   "name": "Queen of Wands",
@@ -418,7 +420,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "36": {
                   "name": "King of Wands",
@@ -430,7 +432,7 @@ const app = {
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "37": {
                   "name": "Ace of Cups",
@@ -442,7 +444,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "38": {
                   "name": "Two of Cups",
@@ -454,7 +456,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "39": {
                   "name": "Three of Cups",
@@ -466,7 +468,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "40": {
                   "name": "Four of Cups",
@@ -478,7 +480,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "41": {
                   "name": "Five of Cups",
@@ -490,7 +492,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "42": {
                   "name": "Six of Cups",
@@ -502,7 +504,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "43": {
                   "name": "Seven of Cups",
@@ -514,7 +516,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "44": {
                   "name": "Eight of Cups",
@@ -526,7 +528,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "45": {
                   "name": "Nine of Cups",
@@ -538,7 +540,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "46": {
                   "name": "Ten of Cups",
@@ -550,7 +552,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "47": {
                   "name": "Page of Cups",
@@ -562,7 +564,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "48": {
                   "name": "Knight of Cups",
@@ -574,7 +576,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "49": {
                   "name": "Queen of Cups",
@@ -586,7 +588,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "50": {
                   "name": "King of Cups",
@@ -598,7 +600,7 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "51": {
                   "name": "Ace of Swords",
@@ -610,7 +612,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "52": {
                   "name": "Two of Swords",
@@ -622,7 +624,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "53": {
                   "name": "Three of Swords",
@@ -634,7 +636,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "54": {
                   "name": "Four of Swords",
@@ -646,7 +648,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "55": {
                   "name": "Five of Swords",
@@ -658,7 +660,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "56": {
                   "name": "Six of Swords",
@@ -670,7 +672,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "57": {
                   "name": "Seven of Swords",
@@ -682,7 +684,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "58": {
                   "name": "Eight of Swords",
@@ -694,7 +696,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "59": {
                   "name": "Nine of Swords",
@@ -706,7 +708,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "60": {
                   "name": "Ten of Swords",
@@ -718,7 +720,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "61": {
                   "name": "Page of Swords",
@@ -730,7 +732,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "62": {
                   "name": "Knight of Swords",
@@ -742,7 +744,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "63": {
                   "name": "Queen of Swords",
@@ -754,7 +756,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "64": {
                   "name": "King of Swords",
@@ -766,7 +768,7 @@ const app = {
                   "suit": "Swords",
                   "suitKeywords": "Power, action, ideas, air",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "65": {
                   "name": "Ace of Pentacles",
@@ -778,7 +780,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "66": {
                   "name": "Two of Pentacles",
@@ -790,7 +792,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "67": {
                   "name": "Three of Pentacles",
@@ -802,7 +804,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "68": {
                   "name": "Four of Pentacles",
@@ -814,7 +816,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Finances, physical health, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "69": {
                   "name": "Five of Pentacles",
@@ -826,7 +828,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "70": {
                   "name": "Six of Pentacles",
@@ -838,7 +840,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "71": {
                   "name": "Seven of Pentacles",
@@ -850,7 +852,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "72": {
                   "name": "Eight of Pentacles",
@@ -862,7 +864,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "73": {
                   "name": "Nine of Pentacles",
@@ -874,7 +876,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "74": {
                   "name": "Ten of Pentacles",
@@ -886,7 +888,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "75": {
                   "name": "Page of Pentacles",
@@ -898,7 +900,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "76": {
                   "name": "Knight of Pentacles",
@@ -910,7 +912,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "77": {
                   "name": "Queen of Pentacles",
@@ -922,7 +924,7 @@ const app = {
                   "suit": "Pentacles",
                   "suitKeywords": "Earthly comforts, material goods, earth",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ""
+                  "reverseKeywords": ["Four","Five","Six"]
                 },
                 "78": {
                   "name": "King of Pentacles",
@@ -932,15 +934,60 @@ const app = {
                   "value": "King",
                   "valueKeywords": "Order, responsibility, command",
                   "suit": "Pentacles",
-                  "suitKeywords": "Earthly comforts, material goods, earth"
+                  "suitKeywords": "Earthly comforts, material goods, earth",
+                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "reverseKeywords": ["Four","Five","Six"]
                 }
   },
 
-  //Generate n "random" numbers between min and max, inclusive.
-  "randomNumber": (min, max, n)=>{
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  //Draw a given number of cards from a deck of a given size. 
+  "drawCardsFunc": (cardsInDeckNum, cardsToDrawNum)=>{
+    let tempCardsArray = app.genRandomNumberArrayFunc(1, cardsInDeckNum, cardsToDrawNum);
+
+    let finalCardsArray = tempCardsArray.map(cardNum =>{
+      let isStandardBool = Math.floor(Math.random() * 2);
+      if (isStandardBool===1){
+        let newCard = {
+          "name": app.tarotDeckObj[cardNum].name,
+          "imagePath": app.tarotDeckObj[cardNum].imagePath,
+          "keywords": app.tarotDeckObj[cardNum].keywords,
+          "description": app.tarotDeckObj[cardNum].description,
+          "value": app.tarotDeckObj[cardNum].value,
+          "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
+          "suit": app.tarotDeckObj[cardNum].suit,
+          "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords
+        };
+        return newCard;
+      }
+      else {
+        let newCard={
+          "name": `${app.tarotDeckObj[cardNum].name}, Reversed`,
+          "imagePath": app.tarotDeckObj[cardNum].imagePath,
+          "keywords": app.tarotDeckObj[cardNum].reverseKeywords,
+          "description": app.tarotDeckObj[cardNum].reverseDescription,
+          "value": app.tarotDeckObj[cardNum].value,
+          "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
+          "suit": app.tarotDeckObj[cardNum].suit,
+          "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords
+        }
+        return newCard;
+      }
+    });
+
+    return finalCardsArray;
+  },
+
+  "drawnCardsArray": [],
+
+  //Return an array of n "random" numbers, between min (inclusive) and max (inclusive).
+  "genRandomNumberArrayFunc": (minNum, maxNum, nNum)=>{
+    let randomNumberArray = []
+      for(let i=0; i<nNum; i++){
+        randomNumberArray.push(Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+      }
+      return randomNumberArray
   }
 
 };
 
-app.randomNumber(5, 6, 7);
+console.log(app.drawCardsFunc(78, 3));
