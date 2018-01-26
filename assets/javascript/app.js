@@ -979,13 +979,38 @@ const app = {
 
   "drawnCardsArray": [],
 
-  //Return an array of n "random" numbers, between min (inclusive) and max (inclusive).
+  //Return an array of nNum unique random numbers between minNum (inclusive) and maxNum (inclusive).
   "genRandomNumberArrayFunc": (minNum, maxNum, nNum)=>{
-    let randomNumberArray = []
-      for(let i=0; i<nNum; i++){
-        randomNumberArray.push(Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+    
+    //Create an array of numbers 1 through maxNum, representing the cards in the deck. Then shuffle it.
+    let orderedNumberArray = [];
+    for(let i=minNum; i<=maxNum; i++){
+      orderedNumberArray.push(i);
+    }
+    let randomNumberArray = app.shuffle(orderedNumberArray);
+
+    //Shorten the array to the given length, representing the drawn cards from the shuffled deck
+    return randomNumberArray.splice(maxNum - nNum);
+  },
+
+  //shuffle a given array
+  "shuffle": (array)=>{
+      var currentIndex = array.length, temporaryValue, randomIndex;
+    
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+    
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+    
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
       }
-      return randomNumberArray
+  
+      return array;
   }
 
 };
