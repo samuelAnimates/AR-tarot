@@ -71,9 +71,13 @@ table {
 	border-image-slice: 7 7 8 7; 
 }
 .border-torn{
-	border-width: 20px 0 20px 0;
-	border-style:solid;
-
+	border-width: 0 0 12px 0;
+	border-style: solid;
+	border-color: rgb(242,242,207);
+	border-image: url("../images/torn-bottom-border.png");
+	border-image-width: 0 0 12px 0; 
+	border-image-slice: 0 0 23 0;
+	border-image-repeat: round;
 }
 
 /* Classes that have ONE job*/
@@ -83,8 +87,11 @@ table {
 .border-radius-10px{
 	border-radius: 10px;
 }
-.box-shadow-1px-1px-7px-29rgb{
-	box-shadow: 1px 1px 7px rgb(29, 29, 29);
+.box-shadow-1px-neg2px-5px-29rgb{
+	box-shadow: 1px -2px 5px rgb(29, 29, 29);
+}
+.box-shadow-1px-neg3px-7px-29rgb{
+	box-shadow: 1px -3px 7px rgb(29, 29, 29);
 }
 .color-242-242-207{
 	color: rgb(242,242,207);
