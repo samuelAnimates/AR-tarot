@@ -1,3 +1,7 @@
+*{
+	box-sizing: border-box;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +50,108 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Background pattern from Subtle Patterns */
+
+/* Background patterns edited from Subtle Patterns downloads*/
+.background-image-cardboard{
+	background-image: url("../images/cardboard.png");
+}
+.background-image-lined-paper{
+    background-image: url("../images/linedPaper.png");
+}
 .background-image-scratches{
     background-image: url("../images/dust_scratches.png");
+}
+
+/* Fancy classes */
+.border-stitched{
+	border: 7px dashed rgb(29, 29, 29);
+	border-image: url("../images/stitch-border.png");
+	border-image-width: 6px; 
+	border-image-repeat: round;
+	border-image-slice: 7 7 8 7; 
+}
+.border-torn{
+	border-width: 20px 0 20px 0;
+	border-style:solid;
+
+}
+
+/* Classes that have ONE job*/
+.background-0-87-72{
+	background-color: rgb(0,87,72);
+}
+.border-radius-10px{
+	border-radius: 10px;
+}
+.box-shadow-1px-1px-7px-29rgb{
+	box-shadow: 1px 1px 7px rgb(29, 29, 29);
+}
+.color-242-242-207{
+	color: rgb(242,242,207);
+}
+.font-roboto-slab{
+	font-family: 'Roboto Slab', serif;
+}
+.font-size-1p75em{
+	font-size: 1.75em;
+}
+.font-size-2p75em{
+	font-size: 2.75em;
+}
+.font-special-elite{
+	font-family: 'Special Elite', cursive;
+}
+.line-height-1p3em{
+	line-height: 1.3em;
+}
+.margin-auto{
+	margin: auto;
+}
+.max-width-10em{
+	max-width: 10em;
+}
+.min-width-5em{
+	min-width: 5em;
+}
+.padding-bottom-p25em{
+	padding-bottom: 0.25em;
+}
+.padding-bottom-p5em{
+	padding-bottom: 0.5em;
+}
+.padding-bottom-1em{
+	padding-bottom: 1em;
+}
+.padding-bottom-3em{
+	padding-bottom: 3em;
+}
+.padding-left-p25em{
+	padding-left: 0.25em;
+}
+.padding-left-2em{
+	padding-left: 2em;
+}
+.padding-right-p25em{
+	padding-right: 0.25em;
+}
+.padding-right-2em{
+	padding-right: 2em;
+}
+.padding-top-p25em{
+	padding-top: 0.25em;
+}
+.padding-top-p5em{
+	padding-top: 0.5em;
+}
+.padding-top-2em{
+	padding-top: 2em;
+}
+.padding-top-3em{
+	padding-top: 3em;
+}
+.text-center{
+	text-align: center;
+}
+.width-75pc{
+	width: 75%;
 }
