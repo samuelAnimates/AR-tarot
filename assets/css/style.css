@@ -55,6 +55,9 @@ table {
 .background-image-cardboard{
 	background-image: url("../images/cardboard.png");
 }
+.background-image-floral{
+	background-image: url("../images/floral.png");
+}
 .background-image-lined-paper{
     background-image: url("../images/linedPaper.png");
 }
@@ -84,20 +87,47 @@ table {
 .background-0-87-72{
 	background-color: rgb(0,87,72);
 }
+.background-242-242-207{
+	background-color: rgb(242,242,207);
+}
+.border-color-179-196-50{
+	border-color: rgb(179, 196, 50);
+}
 .border-radius-10px{
 	border-radius: 10px;
+}
+.border-style-groove{
+	border-style:double;
+}
+.border-width-5px{
+	border-width: 5px;
 }
 .box-shadow-1px-neg2px-5px-29rgb{
 	box-shadow: 1px -2px 5px rgb(29, 29, 29);
 }
+.box-shadow-0-neg2px-2px-43rgb{
+	box-shadow: 0 -2px 2px rgb(43, 43, 43);
+}
 .box-shadow-1px-neg3px-7px-29rgb{
 	box-shadow: 1px -3px 7px rgb(29, 29, 29);
+}
+.clear-both{
+	clear: both;
 }
 .color-242-242-207{
 	color: rgb(242,242,207);
 }
+.display-block{
+	display: block;
+}
+.float-left{
+	float: left;
+}
 .font-roboto-slab{
 	font-family: 'Roboto Slab', serif;
+}
+.font-size-p9em{
+	font-size: 0.9em;
 }
 .font-size-1p75em{
 	font-size: 1.75em;
@@ -107,6 +137,21 @@ table {
 }
 .font-special-elite{
 	font-family: 'Special Elite', cursive;
+}
+.height-200px{
+	height: 200px;
+}
+.height-230px{
+	height: 230px;
+}
+.left-neg2px{
+	left: -2px;
+}
+.left-2px{
+	left: 2px;
+}
+.left-5px{
+	left: 5px;
 }
 .line-height-1p3em{
 	line-height: 1.3em;
@@ -129,8 +174,11 @@ table {
 .padding-bottom-1em{
 	padding-bottom: 1em;
 }
-.padding-bottom-3em{
-	padding-bottom: 3em;
+.padding-bottom-2em{
+	padding-bottom: 2em;
+}
+.padding-bottom-15px{
+	padding-bottom: 15px;
 }
 .padding-left-p25em{
 	padding-left: 0.25em;
@@ -138,11 +186,17 @@ table {
 .padding-left-2em{
 	padding-left: 2em;
 }
+.padding-left-15px{
+	padding-left: 15px;
+}
 .padding-right-p25em{
 	padding-right: 0.25em;
 }
 .padding-right-2em{
 	padding-right: 2em;
+}
+.padding-right-15px{
+	padding-right: 15px;
 }
 .padding-top-p25em{
 	padding-top: 0.25em;
@@ -156,9 +210,51 @@ table {
 .padding-top-3em{
 	padding-top: 3em;
 }
+.padding-top-15px{
+	padding-top: 15px;
+}
+.position-absolute{
+	position: absolute;
+}
+.position-relative{
+	position: relative;
+}
+.rotate-neg3{
+	transform: rotate(-3deg);
+}
+.rotate-1{
+	transform: rotate(1deg);
+}
 .text-center{
 	text-align: center;
 }
+.top-3px{
+	top: 3px;
+}
+.top-6px{
+	top: 6px;
+}
+.top-10px{
+	top: 10px;
+}
+.width-50pc{
+	width: 50%;
+}
 .width-75pc{
 	width: 75%;
+}
+.width-114px{
+	width: 114px;
+}
+.width-154px{
+	width: 144px;
+}
+.z-neg2{
+	z-index: -2;
+}
+.z-neg1{
+	z-index: -1;
+}
+.z-1{
+	z-index: 1;
 }
