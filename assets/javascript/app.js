@@ -1016,5 +1016,55 @@ const app = {
 };
 
 $("#reading-button").click(function() {
-  console.log(app.drawCardsFunc(78, 3));
+  $("#display-deck").remove();
+  $("#results-section").append(`<div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb text-center" id="fabric-backdrop"><h2>Results</h2></div>`)
+  const drawnCards = app.drawCardsFunc(78,3);
+  $("#fabric-backdrop").append(`
+    <div class="clear-both">
+      <h3>Past</h3>
+      <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block float-left height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
+        <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+        </div>
+      </div>
+      <div class="float-left">
+        ${drawnCards[0].name}
+        <ol>
+          <li>${drawnCards[0].keywords[0]}</li>
+          <li>${drawnCards[0].keywords[1]}</li>
+          <li>${drawnCards[0].keywords[2]}</li>
+        </ol>
+      </div>
+    </div>`);
+  $("#fabric-backdrop").append(`
+    <div class="clear-both">
+      <h3>Present</h3>
+      <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block float-left height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
+        <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+        </div>
+      </div>
+      <div class="float-left">
+        ${drawnCards[1].name}
+        <ol>
+          <li>${drawnCards[1].keywords[0]}</li>
+          <li>${drawnCards[1].keywords[1]}</li>
+          <li>${drawnCards[1].keywords[2]}</li>
+        </ol>
+      </div>
+    </div>`);
+  $("#fabric-backdrop").append(`
+    <div class="clear-both">
+      <h3>Future</h3>
+      <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block float-left height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
+        <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+        </div>
+      </div>
+      <div class="float-left">
+        ${drawnCards[2].name}
+        <ol>
+          <li>${drawnCards[2].keywords[0]}</li>
+          <li>${drawnCards[2].keywords[1]}</li>
+          <li>${drawnCards[2].keywords[2]}</li>
+        </ol>
+      </div>
+    </div>`);
 });

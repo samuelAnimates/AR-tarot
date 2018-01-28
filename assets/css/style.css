@@ -177,6 +177,9 @@ table {
 .min-width-5em{
 	min-width: 5em;
 }
+.min-width-270px{
+	min-width: 270px;
+}
 .padding-bottom-p25em{
 	padding-bottom: 0.25em;
 }
