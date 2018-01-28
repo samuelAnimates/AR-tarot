@@ -90,17 +90,26 @@ table {
 .background-0-87-72{
 	background-color: rgb(0,87,72);
 }
-.background-242-242-207{
-	background-color: rgb(242,242,207);
+.background-28-92-81{
+	background-color: rgb(28, 92, 81);
 }
-.border-color-179-196-50{
-	border-color: rgb(179, 196, 50);
+.border-color-0-62-51{
+	border-color: rgb(47,53,0);
+}
+.border-color-0-62-51-p1{
+	border-color: rgba(47, 53, 0, 0.1);
 }
 .border-radius-10px{
 	border-radius: 10px;
 }
-.border-style-groove{
+.border-style-double{
 	border-style:double;
+}
+.border-style-solid{
+	border-style:solid;
+}
+.border-width-1px{
+	border-width: 1px;
 }
 .border-width-5px{
 	border-width: 5px;
@@ -141,11 +150,11 @@ table {
 .font-special-elite{
 	font-family: 'Special Elite', cursive;
 }
-.height-200px{
-	height: 200px;
+.height-350px{
+	height: 350px;
 }
-.height-230px{
-	height: 230px;
+.height-380px{
+	height: 380px;
 }
 .left-neg2px{
 	left: -2px;
@@ -194,6 +203,9 @@ table {
 }
 .padding-right-p25em{
 	padding-right: 0.25em;
+}
+.padding-right-1em{
+	padding-right: 1em;
 }
 .padding-right-2em{
 	padding-right: 2em;
@@ -246,11 +258,11 @@ table {
 .width-75pc{
 	width: 75%;
 }
-.width-114px{
-	width: 114px;
+.width-200px{
+	width: 200px;
 }
-.width-154px{
-	width: 144px;
+.width-230px{
+	width: 230px;
 }
 .z-neg2{
 	z-index: -2;

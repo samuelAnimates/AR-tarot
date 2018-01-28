@@ -1015,4 +1015,6 @@ const app = {
 
 };
 
-console.log(app.drawCardsFunc(78, 3));
+$("#reading-button").click(function() {
+  console.log(app.drawCardsFunc(78, 3));
+});
