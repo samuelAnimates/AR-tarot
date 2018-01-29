@@ -5,14 +5,14 @@ const app = {
                 "1": {
                   "name": "The Fool",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Intoxication", "Extravagance", "Delusional"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Vanity","Carelessness","Apathy"]
                 },
                 "2": {
                   "name": "The Magician",
@@ -24,108 +24,108 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Disquiet","Disgrace","Distrust"]
                 },
                 "3": {
                   "name": "The High Priestess",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Wisdom", "Mystery", "Secrecy"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Superficial","Conceit","Vapid"]
                 },
                 "4": {
                   "name": "The Empress",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Fruitfulness","Nature","Provider"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Unraveling","Overwhelming","Indecision"]
                 },
                 "5": {
                   "name": "The Emperor",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Stability", "Power", "Authority"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Innocence","Immaturity","Confusion"]
                 },
                 "6": {
                   "name": "The Hierophant",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Servitude", "Tradition", "Hierarchy"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Anarchy","Subversion","Questioning"]
                 },
                 "7": {
                   "name": "The Lovers",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Respect", "Support", "Partnership"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Imbalance","Infidelity","Disagreements"]
                 },
                 "8": {
                   "name": "The Chariot",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Triumph", "Perseverance", "Conquest"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Defeat","Dispute","Aimlessness"]
                 },
                 "9": {
                   "name": "Strength",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Power", "Energy", "Action"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Abuse of power","Shakiness","Disgrace"]
                 },
                 "10": {
                   "name": "The Hermit",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Reflection", "Concealment", "Vigilance"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Disguise","Fear","Paranoia"]
                 },
                 "11": {
                   "name": "Wheel of Fortune",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Happenstance", "Development", "Fate"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
                   "valueKeywords": "",
