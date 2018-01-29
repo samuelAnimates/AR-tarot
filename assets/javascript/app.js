@@ -341,14 +341,14 @@ const app = {
                 "29": {
                   "name": "Seven of Wands",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Deliberations", "Negotiations", "Competition"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Seven",
                   "valueKeywords": "Evolution, change, processing",
                   "suit": "Wands",
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Anxiety","Conundrum","Distress"]
                 },
                 "30": {
                   "name": "Eight of Wands",
