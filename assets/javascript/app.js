@@ -461,67 +461,67 @@ const app = {
                 "39": {
                   "name": "Three of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Kinship", "Support", "Collective"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Three",
                   "valueKeywords": "Connection, growth, creation",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Bullying","Odd one out","Exclusion"]
                 },
                 "40": {
                   "name": "Four of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Weariness", "Disgust", "Aversion"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Four",
                   "valueKeywords": "Stability, structure, foundation",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Novelty","Fresh perspective","New relations"]
                 },
                 "41": {
                   "name": "Five of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Loss", "Bitterness", "Grief"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Five",
                   "valueKeywords": "Challenge, adventure, unpredictability",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Lessons learned","Recovery","Return"]
                 },
                 "42": {
                   "name": "Six of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Memories", "Nostalgia", "Findsight"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Six",
                   "valueKeywords": "Equality, beauty, union",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Disappearance","Deletion","Fading image"]
                 },
                 "43": {
                   "name": "Seven of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Imagination", "Fantasy", "Loss of reality"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Seven",
                   "valueKeywords": "Evolution, change, processing",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Determination","Dreams","Goals"]
                 },
                 "44": {
                   "name": "Eight of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Lightened load", "Cleanse", "Liquidation"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Eight",
                   "valueKeywords": "Cycles, reconstruction, reiteration",
