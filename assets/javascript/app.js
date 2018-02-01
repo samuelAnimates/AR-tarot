@@ -528,115 +528,115 @@ const app = {
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Great Loss","Emptiness","Abandonment"]
                 },
                 "45": {
                   "name": "Nine of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Satisfaction", "Assurance", "Contentment"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Nine",
                   "valueKeywords": "Gratification, realization, recognition",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Overkill","Greed","Selfishness"]
                 },
                 "46": {
                   "name": "Ten of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Happiness", "Fulfillment", "Storybook ending"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Ten",
                   "valueKeywords": "Culmination, perfection, resolution",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["False heart","Settling","Surrender"]
                 },
                 "47": {
                   "name": "Page of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Message", "Signal", "News"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Page",
                   "valueKeywords": "New energy, new beginnings, spark",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["False alarm","",""]
                 },
                 "48": {
                   "name": "Knight of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Proposition", "Enticement", "Invitation"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Knight",
                   "valueKeywords": "Extremes, changes, actions",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Swindler","Scammer","Fraud"]
                 },
                 "49": {
                   "name": "Queen of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Emotional intelligence","Comfort","Sympathy"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Queen",
                   "valueKeywords": "Mastery, understanding, finesse",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Manipulation","Extraction","Blackmail"]
                 },
                 "50": {
                   "name": "King of Cups",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Stability", "Peace", "Self-repair"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "King",
                   "valueKeywords": "Order, responsibility, command",
                   "suit": "Cups",
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Instability","Distrust","Fragility"]
                 },
                 "51": {
                   "name": "Ace of Swords",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Triumph", "Conquest", "Victory"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Ace",
                   "valueKeywords": "New Beginnings, opportunity, starting point",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "reverseKeywords": ["Devastation","Brutality","Theft"]
                 },
                 "52": {
                   "name": "Two of Swords",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Guarded exchanges", "Reservations", "Hesitation"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Two",
                   "valueKeywords": "Harmony, balance, duality",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "reverseKeywords": ["Unease","Paranoia","Edginess"]
                 },
                 "53": {
                   "name": "Three of Swords",
                   "imagePath": "./assets/images/cards/",
-                  "keywords": ["One", "Two", "Three"],
+                  "keywords": ["Pain", "Attack", "Double-crossing"],
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "Three",
                   "valueKeywords": "Connection, growth, creation",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "reverseKeywords": ["Distraction","Diversion","Suppression"]
                 },
                 "54": {
                   "name": "Four of Swords",
@@ -646,8 +646,8 @@ const app = {
                   "value": "Four",
                   "valueKeywords": "Stability, structure, foundation",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "55": {
@@ -658,8 +658,8 @@ const app = {
                   "value": "Five",
                   "valueKeywords": "Challenge, adventure, unpredictability",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "56": {
@@ -670,8 +670,8 @@ const app = {
                   "value": "Six",
                   "valueKeywords": "Equality, beauty, union",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "57": {
@@ -682,8 +682,8 @@ const app = {
                   "value": "Seven",
                   "valueKeywords": "Evolution, change, processing",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "58": {
@@ -694,8 +694,8 @@ const app = {
                   "value": "Eight",
                   "valueKeywords": "Cycles, reconstruction, reiteration",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "59": {
@@ -706,8 +706,8 @@ const app = {
                   "value": "Nine",
                   "valueKeywords": "Gratification, realization, recognition",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "60": {
@@ -718,8 +718,8 @@ const app = {
                   "value": "Ten",
                   "valueKeywords": "Culmination, perfection, resolution",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "61": {
@@ -730,8 +730,8 @@ const app = {
                   "value": "Page",
                   "valueKeywords": "New energy, new beginnings, spark",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "62": {
@@ -742,8 +742,8 @@ const app = {
                   "value": "Knight",
                   "valueKeywords": "Extremes, changes, actions",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "63": {
@@ -754,8 +754,8 @@ const app = {
                   "value": "Queen",
                   "valueKeywords": "Mastery, understanding, finesse",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "64": {
@@ -766,8 +766,8 @@ const app = {
                   "value": "King",
                   "valueKeywords": "Order, responsibility, command",
                   "suit": "Swords",
-                  "suitKeywords": "Power, action, ideas, air",
-                  "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  "suitKeywords": "Mental power, action, ideas, air",
+                  "reverseDescription": "ulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseKeywords": ["Four","Five","Six"]
                 },
                 "65": {
