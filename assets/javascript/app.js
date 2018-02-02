@@ -1,11 +1,15 @@
 "use strict";
 
 const app = {
+  //object containing each card in the Waite-Smith Tarot deck
   "tarotDeckObj": {
                 "1": {
+                  //Card Name for display
                   "name": "The Fool",
                   "imagePath": "./assets/images/cards/",
+                  //Card meaning keywords for the upright orientation
                   "keywords": ["Intoxication", "Extravagance", "Delusional"],
+                  //More detailed card meaning for the upright orientation
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
                   "value": "",
@@ -13,7 +17,9 @@ const app = {
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                  //More detailed card meaning for the upside-down orientation
                   "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
+                  //Card meaning keywords for the upside-down orientation
                   "reverseKeywords": ["Vanity","Carelessness","Apathy"]
                 },
                 "2": {
@@ -476,7 +482,7 @@ const app = {
                   "suitKeywords": "Passion, creativity, ambition",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
-                  "reverseKeywords": ["Four","Five","Six"]
+                  "reverseKeywords": ["Interruption","Five","Six"]
                 },
                 "35": {
                   "name": "Queen of Wands",
@@ -658,7 +664,7 @@ const app = {
                   "suitKeywords": "Feelings, Emotional Issues, Relationships, Water",
                   "reverseDescription": "Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                   "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
-                  "reverseKeywords": ["False alarm","",""]
+                  "reverseKeywords": ["False alarm","Misinterpretation","False start"]
                 },
                 "48": {
                   "name": "Knight of Cups",
@@ -1108,6 +1114,7 @@ const app = {
           "imagePath": app.tarotDeckObj[cardNum].imagePath,
           "keywords": app.tarotDeckObj[cardNum].keywords,
           "description": app.tarotDeckObj[cardNum].description,
+          "meaning": app.tarotDeckObj[cardNum].meaning,
           "value": app.tarotDeckObj[cardNum].value,
           "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
           "suit": app.tarotDeckObj[cardNum].suit,
@@ -1120,7 +1127,8 @@ const app = {
           "name": `${app.tarotDeckObj[cardNum].name}, Reversed`,
           "imagePath": app.tarotDeckObj[cardNum].imagePath,
           "keywords": app.tarotDeckObj[cardNum].reverseKeywords,
-          "description": app.tarotDeckObj[cardNum].reverseDescription,
+          "description": app.tarotDeckObj[cardNum].description,
+          "meaning": app.tarotDeckObj[cardNum].reverseMeaning,
           "value": app.tarotDeckObj[cardNum].value,
           "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
           "suit": app.tarotDeckObj[cardNum].suit,
@@ -1130,9 +1138,21 @@ const app = {
       }
     });
 
+    //add roles for readings with given card numbers
+    if (finalCardsArray.length === 3){
+      finalCardsArray[0].role="Past";
+      finalCardsArray[1].role="Present";
+      finalCardsArray[2].role="Future";
+    }
+
     return finalCardsArray;
   },
 
+  "displayCardKeywordsFunc": (keywordsArray)=>{
+    keywordsArray.map(keyword => {`<li>${keyword}</li>`});
+  },
+
+  //Array that will hold the cards drawn
   "drawnCardsArray": [],
 
   //Return an array of nNum unique random numbers between minNum (inclusive) and maxNum (inclusive).
@@ -1172,55 +1192,53 @@ const app = {
 };
 
 $("#reading-button").click(function() {
+  $("#intro-section").remove();
   $("#display-deck").remove();
-  $("#results-section").append(`<div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb text-center" id="fabric-backdrop"><h2>Results</h2></div>`)
+  $("#results-section").append(`<section class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px position-realtive text-center" id="fabric-backdrop"><h2 class="font-size-1p75em font-special-elite">Results</h2></section>`)
   const drawnCards = app.drawCardsFunc(78,3);
-  $("#fabric-backdrop").append(`
-    <div class="clear-both">
-      <h3>Past</h3>
-      <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block float-left height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
-        <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+  
+  $("main").prepend(`
+    <!-- This section explains how to interpret the reading -->
+    <section class="padding-bottom-2em">
+      <div class="border-torn box-shadow-1px-neg2px-5px-29rgb margin-auto width-75pc" id="explanation-section">
+          <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
+              <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret the cards:</h2>
+              <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
+                  <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit</p>
+              </div>
+          </div>
+      </div>
+    </section>
+  `);
+
+  $("#fabric-backdrop").append(drawnCards.map(card => {return `
+    <div class="clear-both padding-top-2em">
+      <div class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite margin-auto max-width-16em min-width-5em padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p25em text-center width-75pc">
+        <div class="border-stitched border-radius-10px padding-bottom-p5em padding-top-p5em">
+          <h3>${card.role}:<p class="font-size-p9em">${card.name}<p></h3>
         </div>
       </div>
-      <div class="float-left">
-        ${drawnCards[0].name}
-        <ol>
-          <li>${drawnCards[0].keywords[0]}</li>
-          <li>${drawnCards[0].keywords[1]}</li>
-          <li>${drawnCards[0].keywords[2]}</li>
-        </ol>
-      </div>
-    </div>`);
-  $("#fabric-backdrop").append(`
-    <div class="clear-both">
-      <h3>Present</h3>
-      <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block float-left height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
-        <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+      <div class="padding-bottom-1em padding-top-1em">
+        <div class="clear-both">
+          Keywords:
+          <div class="display-block margin-auto text-center">
+            ${card.keywords.map(keyword => {return `<span class="display-inline-block">&nbsp;${keyword}</span>`})}.
+          </div>
         </div>
       </div>
-      <div class="float-left">
-        ${drawnCards[1].name}
-        <ol>
-          <li>${drawnCards[1].keywords[0]}</li>
-          <li>${drawnCards[1].keywords[1]}</li>
-          <li>${drawnCards[1].keywords[2]}</li>
-        </ol>
-      </div>
-    </div>`);
-  $("#fabric-backdrop").append(`
-    <div class="clear-both">
-      <h3>Future</h3>
-      <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block float-left height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
-        <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+      <div class="clear-both">
+        <div>
+          <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
+              <div class="border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+                <img src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
+              </div>
+          </div>
+        </div>
+        <div class="font-size-p8em line-height-1p3em padding-left-1p5em padding-right-1p5em">
+          <p id="${card.role}-card-description">${card.description}</p>
+          <p>${card.meaning}</p>
         </div>
       </div>
-      <div class="float-left">
-        ${drawnCards[2].name}
-        <ol>
-          <li>${drawnCards[2].keywords[0]}</li>
-          <li>${drawnCards[2].keywords[1]}</li>
-          <li>${drawnCards[2].keywords[2]}</li>
-        </ol>
-      </div>
-    </div>`);
+    </div>
+  `}));
 });

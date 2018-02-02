@@ -132,11 +132,17 @@ table {
 .display-block{
 	display: block;
 }
+.display-inline-block{
+	display: inline-block;
+}
 .float-left{
 	float: left;
 }
 .font-roboto-slab{
 	font-family: 'Roboto Slab', serif;
+}
+.font-size-p8em{
+	font-size: 0.8em;
 }
 .font-size-p9em{
 	font-size: 0.9em;
@@ -174,6 +180,9 @@ table {
 .max-width-10em{
 	max-width: 10em;
 }
+.max-width-16em{
+	max-width: 16em;
+}
 .min-width-5em{
 	min-width: 5em;
 }
@@ -198,6 +207,9 @@ table {
 .padding-left-p25em{
 	padding-left: 0.25em;
 }
+.padding-left-1p5em{
+	padding-left: 1.5em;
+}
 .padding-left-2em{
 	padding-left: 2em;
 }
@@ -210,6 +222,9 @@ table {
 .padding-right-1em{
 	padding-right: 1em;
 }
+.padding-right-1p5em{
+	padding-right: 1.5em;
+}
 .padding-right-2em{
 	padding-right: 2em;
 }
@@ -221,6 +236,9 @@ table {
 }
 .padding-top-p5em{
 	padding-top: 0.5em;
+}
+.padding-top-1em{
+	padding-top: 1em;
 }
 .padding-top-2em{
 	padding-top: 2em;
