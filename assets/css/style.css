@@ -141,6 +141,9 @@ table {
 .font-roboto-slab{
 	font-family: 'Roboto Slab', serif;
 }
+.font-size-p5em{
+	font-size: 0.5em;
+}
 .font-size-p8em{
 	font-size: 0.8em;
 }

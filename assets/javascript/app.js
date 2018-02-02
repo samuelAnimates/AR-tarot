@@ -1214,15 +1214,10 @@ $("#reading-button").click(function() {
   $("#fabric-backdrop").append(drawnCards.map(card => {return `
     <div class="clear-both padding-top-2em">
       <div class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite margin-auto max-width-16em min-width-5em padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p25em text-center width-75pc">
-        <div class="border-stitched border-radius-10px padding-bottom-p5em padding-top-p5em">
-          <h3>${card.role}:<p class="font-size-p9em">${card.name}<p></h3>
-        </div>
-      </div>
-      <div class="padding-bottom-1em padding-top-1em">
-        <div class="clear-both">
-          Keywords:
-          <div class="display-block margin-auto text-center">
-            ${card.keywords.map(keyword => {return `<span class="display-inline-block">&nbsp;${keyword}</span>`})}.
+        <div class="border-stitched border-radius-10px padding-top-p5em">
+          <h3>${card.role}:<p class="font-size-p8em">${card.name}.<p></h3>
+          <div class="font-size-p5em padding-top-p5em">
+            Keywords: ${card.keywords.map(keyword => {return `<span class="display-inline-block">&nbsp;${keyword}</span>`})}.
           </div>
         </div>
       </div>
