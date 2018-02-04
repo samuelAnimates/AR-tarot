@@ -67,6 +67,9 @@ table {
 .background-image-scratches{
     background-image: url("../images/dust_scratches.png");
 }
+.background-image-white-paper{
+    background-image: url("../images/white-paper.png");
+}
 
 /* Fancy classes */
 .border-stitched{
@@ -93,6 +96,9 @@ table {
 .background-28-92-81{
 	background-color: rgb(28, 92, 81);
 }
+.background-248-248-248{
+	background-color: rgb(248,248,248);
+}
 .border-color-0-62-51{
 	border-color: rgb(47,53,0);
 }
@@ -116,6 +122,9 @@ table {
 }
 .box-shadow-1px-neg2px-5px-29rgb{
 	box-shadow: 1px -2px 5px rgb(29, 29, 29);
+}
+.box-shadow-0-neg2px-2px-43rgb-p3a{
+	box-shadow: 1px -2px 2px rgba(43, 43, 43, 0.3);
 }
 .box-shadow-0-neg2px-2px-43rgb{
 	box-shadow: 0 -2px 2px rgb(43, 43, 43);
@@ -243,6 +252,9 @@ table {
 .padding-top-1em{
 	padding-top: 1em;
 }
+.padding-top-1p5em{
+	padding-top: 1.5em;
+}
 .padding-top-2em{
 	padding-top: 2em;
 }
@@ -266,6 +278,9 @@ table {
 }
 .text-center{
 	text-align: center;
+}
+.text-underline{
+	text-decoration: underline;
 }
 .top-3px{
 	top: 3px;
