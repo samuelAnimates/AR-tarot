@@ -7,13 +7,17 @@
     <title>AR-tarot</title>
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Roboto+Slab:300" rel="stylesheet">
+    <!-- include A-Frame -->
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <script
         src="http://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="background-image-scratches padding-bottom-2em padding-left-2em padding-right-2em padding-top-2em">
+    <div class="background-image-scratches padding-bottom-1em padding-left-2em padding-right-2em padding-top-2em" id="body-container">
         <header class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-2p75em font-special-elite margin-auto max-width-10em min-width-5em padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p25em text-center width-75pc">
             <div class="border-stitched border-radius-10px padding-top-p5em">
                 <h1>AR-TAROT</h1>
@@ -44,10 +48,21 @@
                 </div>
                 <div class="float-left width-50pc">
                     <button class="display-block margin-auto" id="reading-button">Get a reading.</button>
+                    <button class="display-block margin-auto" id="ar-button">Test AR-tarot.</button>
                 </div>
             </section>
         </main>
-        <footer class="clear-both">Card interpretations and descriptions adapted from "The Pictorial Key to the Tarot" by AE Waite, with illustrations by Pamela Colman Smith. Credit to John B. Hare at <a href="http://www.sacred-texts.com">sacred-texts.com</a> for digitizing and archiving the source material.</footer>
+        <footer class="clear-both font-size-p8em margin-auto padding-top-2em width-75pc">
+            <div class="border-torn box-shadow-1px-neg2px-5px-29rgb">
+                <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-p25em padding-left-2em padding-top-p25em">
+                    <div class="font-roboto-slab font-size-p8em line-height-1p3em padding-right-1em">
+                        <p>
+                            Card interpretations and descriptions adapted from "The Pictorial Key to the Tarot" by AE Waite, with illustrations by Pamela Colman Smith. Credit to John B. Hare at <a href="http://www.sacred-texts.com">www.sacred-texts.com</a> for digitizing and archiving the source material.Background patterns edited from Subtle Patterns at <a href="https://www.toptal.com/designers/subtlepatterns/">www.toptal.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="./assets/javascript/app.js"></script>
 </body>

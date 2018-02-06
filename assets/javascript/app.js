@@ -1254,3 +1254,44 @@ $("#reading-button").click(function() {
     </div>
   `}));
 });
+
+$("#ar-button").click(function() {
+  $("body").css( {
+    "margin": "0px",
+    "overflow": "hidden"
+  } );
+  $("header").remove();
+  $("main").html(`
+    <a-scene arjs>
+      <a-assets>
+        <img id="past-image" src="https://vignette.wikia.nocookie.net/dishonoredvideogame/images/f/fb/Tarot_back.png">
+        <img id="present-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Illustr._Nemo_-_L’Amitié_1884%2C_page_11.png/557px-Illustr._Nemo_-_L’Amitié_1884%2C_page_11.png">
+        <img id="future-image" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Karten_Homoeopathie_Tarot-215x300.png">
+      </a-assets>
+      <a-marker-camera preset="hiro">
+          <a-entity position="-1 0 0">
+            <!-- Using the asset management system. -->
+            <a-image width=".6" height="1.05" src="#past-image" rotation="0 0 0"></a-image>
+            <a-text value="Past" position="0 1.05 0"></a-text>
+          </a-entity>
+          <a-entity position="0 0 0">
+          <!-- Using the asset management system. -->
+          <a-image width=".6" height="1.05" src="#present-image" rotation="0 0 0"></a-image>
+          <a-text value="Present" position="0 1.05 0"></a-text>
+        </a-entity>
+        <a-entity position="1 0 0">
+        <!-- Using the asset management system. -->
+        <a-image width=".6" height="1.05" src="#future-image" rotation="0 0 0"></a-image>
+        <a-text value="Future" position="0 1.05 0"></a-text>
+      </a-entity>
+      </a-marker-camera>
+    </a-scene>
+    <script>
+      $("body").append('<button id="AYYLMAO" class="float-left position-absoltue z-1000">AY LMAO</button>');
+      $("#AYYLMAO").click(function() {
+        $( this ).remove();
+      });
+    </script>
+    `
+  );
+});
