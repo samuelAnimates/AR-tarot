@@ -171,6 +171,9 @@ table {
 .font-special-elite{
 	font-family: 'Special Elite', cursive;
 }
+.height-340px{
+	height: 340px;
+}
 .height-350px{
 	height: 350px;
 }
@@ -279,6 +282,9 @@ table {
 .rotate-1{
 	transform: rotate(1deg);
 }
+.rotate-180deg{
+	transform: rotate(180deg);
+}
 .text-center{
 	text-align: center;
 }
@@ -299,6 +305,9 @@ table {
 }
 .width-75pc{
 	width: 75%;
+}
+.width-190px{
+	width: 190px;
 }
 .width-200px{
 	width: 200px;

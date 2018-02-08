@@ -6,7 +6,7 @@ const app = {
                 "1": {
                   //Card Name for display
                   "name": "The Fool",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorFool.png",
                   //Card meaning keywords for the upright orientation
                   "keywords": ["Intoxication", "Extravagance", "Delusional"],
                   //More detailed card meaning for the upright orientation
@@ -24,7 +24,7 @@ const app = {
                 },
                 "2": {
                   "name": "The Magician",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorMagician.png",
                   "keywords": ["Subtlety", "Skill", "Will"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -38,7 +38,7 @@ const app = {
                 },
                 "3": {
                   "name": "The High Priestess",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorHighPriestess.png",
                   "keywords": ["Wisdom", "Mystery", "Secrecy"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -52,7 +52,7 @@ const app = {
                 },
                 "4": {
                   "name": "The Empress",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorEmpress.png",
                   "keywords": ["Fruitfulness","Nature","Provider"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -66,7 +66,7 @@ const app = {
                 },
                 "5": {
                   "name": "The Emperor",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorEmperor.png",
                   "keywords": ["Stability", "Power", "Authority"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -80,7 +80,7 @@ const app = {
                 },
                 "6": {
                   "name": "The Hierophant",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorHierophant.png",
                   "keywords": ["Servitude", "Tradition", "Hierarchy"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -94,7 +94,7 @@ const app = {
                 },
                 "7": {
                   "name": "The Lovers",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorLovers.png",
                   "keywords": ["Respect", "Support", "Partnership"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -108,7 +108,7 @@ const app = {
                 },
                 "8": {
                   "name": "The Chariot",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorChariot.png",
                   "keywords": ["Triumph", "Perseverance", "Conquest"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -122,7 +122,7 @@ const app = {
                 },
                 "9": {
                   "name": "Strength",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorStrength.png",
                   "keywords": ["Power", "Energy", "Action"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -136,7 +136,7 @@ const app = {
                 },
                 "10": {
                   "name": "The Hermit",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorHermit.png",
                   "keywords": ["Reflection", "Concealment", "Vigilance"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -150,7 +150,7 @@ const app = {
                 },
                 "11": {
                   "name": "Wheel of Fortune",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorWheelOfFortune.png",
                   "keywords": ["Happenstance", "Development", "Fate"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -164,7 +164,7 @@ const app = {
                 },
                 "12": {
                   "name": "Justice",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorJustice.png",
                   "keywords": ["Equity", "Righteousness", "Truth"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -178,7 +178,7 @@ const app = {
                 },
                 "13": {
                   "name": "The Hanged Man",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorHangedMan.png",
                   "keywords": ["Suspension", "Sacrifice", "Blessing in disguise"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -192,7 +192,7 @@ const app = {
                 },
                 "14": {
                   "name": "Death",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorDeath.png",
                   "keywords": ["Evolution", "Rebirth", "Overhaul"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -206,7 +206,7 @@ const app = {
                 },
                 "15": {
                   "name": "Temperance",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorTemperance.png",
                   "keywords": ["One", "Two", "Three"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -220,7 +220,7 @@ const app = {
                 },
                 "16": {
                   "name": "The Devil",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorDevil.png",
                   "keywords": ["Prisoner", "Addiction", "Debt"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -234,7 +234,7 @@ const app = {
                 },
                 "17": {
                   "name": "The Tower",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorTower.png",
                   "keywords": ["Calamity", "Distress", "Misery"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -248,7 +248,7 @@ const app = {
                 },
                 "18": {
                   "name": "The Star",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorStar.png",
                   "keywords": ["Hope", "Bright prospects", "Irrigation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -262,7 +262,7 @@ const app = {
                 },
                 "19": {
                   "name": "The Moon",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorMoon.png",
                   "keywords": ["Hidden threats", "Darkness", "Discernment"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -276,7 +276,7 @@ const app = {
                 },
                 "20": {
                   "name": "The Sun",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorSun.png",
                   "keywords": ["Fortune", "Energy", "Life"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -290,7 +290,7 @@ const app = {
                 },
                 "21": {
                   "name": "Judgement",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorJudgement.png",
                   "keywords": ["Transformation", "Change of position", "Aftermath"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -304,7 +304,7 @@ const app = {
                 },
                 "22": {
                   "name": "The World",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_majorWorld.png",
                   "keywords": ["Perfection", "Completed voyage", "Success"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -318,7 +318,7 @@ const app = {
                 },
                 "23": {
                   "name": "Ace of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wandsAce.png",
                   "keywords": ["Creation", "Invention", "Birth"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -332,7 +332,7 @@ const app = {
                 },
                 "24": {
                   "name": "Two of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands02.png",
                   "keywords": ["Contemplation", "Dominion", "Comparison"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -346,7 +346,7 @@ const app = {
                 },
                 "25": {
                   "name": "Three of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands03.png",
                   "keywords": ["Enterprise", "Trade", "Cooperation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -360,7 +360,7 @@ const app = {
                 },
                 "26": {
                   "name": "Four of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands04.png",
                   "keywords": ["Safe haven", "Support", "Work-life balance"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -374,7 +374,7 @@ const app = {
                 },
                 "27": {
                   "name": "Five of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands05.png",
                   "keywords": ["Competition", "Rat race", "Imitation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -388,7 +388,7 @@ const app = {
                 },
                 "28": {
                   "name": "Six of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands06.png",
                   "keywords": ["Victory","Hope", "Good news"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -402,7 +402,7 @@ const app = {
                 },
                 "29": {
                   "name": "Seven of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands07.png",
                   "keywords": ["Deliberations", "Negotiations", "Competition"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -416,7 +416,7 @@ const app = {
                 },
                 "30": {
                   "name": "Eight of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands08.png",
                   "keywords": ["Motion", "Forward momentum", "High speed"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -430,7 +430,7 @@ const app = {
                 },
                 "31": {
                   "name": "Nine of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands09.png",
                   "keywords": ["Strength", "Stamina", "Defense"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -444,7 +444,7 @@ const app = {
                 },
                 "32": {
                   "name": "Ten of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wands10.png",
                   "keywords": ["Gains", "Burdens", "Hard-won success"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -458,7 +458,7 @@ const app = {
                 },
                 "33": {
                   "name": "Page of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wandsPage.png",
                   "keywords": ["Unbridled ambition", "Creative spark", "Experimentation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -472,7 +472,7 @@ const app = {
                 },
                 "34": {
                   "name": "Knight of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wandsKnight.png",
                   "keywords": ["Flight", "Departure", "Three"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -486,7 +486,7 @@ const app = {
                 },
                 "35": {
                   "name": "Queen of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wandsQueen.png",
                   "keywords": ["Self-sustainment", "Self-confidence", "Self-reliance"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -500,7 +500,7 @@ const app = {
                 },
                 "36": {
                   "name": "King of Wands",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_wandsKing.png",
                   "keywords": ["Leadership","Vision","Direction"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -514,7 +514,7 @@ const app = {
                 },
                 "37": {
                   "name": "Ace of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cupsAce.png",
                   "keywords": ["Opportunity", "Budding relationship", "Forthrightness"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -528,7 +528,7 @@ const app = {
                 },
                 "38": {
                   "name": "Two of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups02.png",
                   "keywords": ["Cooperation", "Union", "Sympathy"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -542,7 +542,7 @@ const app = {
                 },
                 "39": {
                   "name": "Three of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups03.png",
                   "keywords": ["Kinship", "Support", "Collective"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -556,7 +556,7 @@ const app = {
                 },
                 "40": {
                   "name": "Four of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups04.png",
                   "keywords": ["Weariness", "Disgust", "Aversion"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -570,7 +570,7 @@ const app = {
                 },
                 "41": {
                   "name": "Five of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups05.png",
                   "keywords": ["Loss", "Bitterness", "Grief"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -584,7 +584,7 @@ const app = {
                 },
                 "42": {
                   "name": "Six of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups06.png",
                   "keywords": ["Memories", "Nostalgia", "Findsight"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -598,7 +598,7 @@ const app = {
                 },
                 "43": {
                   "name": "Seven of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups07.png",
                   "keywords": ["Imagination", "Fantasy", "Loss of reality"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -612,7 +612,7 @@ const app = {
                 },
                 "44": {
                   "name": "Eight of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups08.png",
                   "keywords": ["Lightened load", "Cleanse", "Liquidation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -626,7 +626,7 @@ const app = {
                 },
                 "45": {
                   "name": "Nine of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups09.png",
                   "keywords": ["Satisfaction", "Assurance", "Contentment"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -640,7 +640,7 @@ const app = {
                 },
                 "46": {
                   "name": "Ten of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cups10.png",
                   "keywords": ["Happiness", "Fulfillment", "Storybook ending"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -654,7 +654,7 @@ const app = {
                 },
                 "47": {
                   "name": "Page of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cupsPage.png",
                   "keywords": ["Message", "Signal", "News"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -668,7 +668,7 @@ const app = {
                 },
                 "48": {
                   "name": "Knight of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cupsKnight.png",
                   "keywords": ["Proposition", "Enticement", "Invitation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -682,7 +682,7 @@ const app = {
                 },
                 "49": {
                   "name": "Queen of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cupsQueen.png",
                   "keywords": ["Emotional intelligence","Comfort","Sympathy"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -696,7 +696,7 @@ const app = {
                 },
                 "50": {
                   "name": "King of Cups",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_cupsKing.png",
                   "keywords": ["Stability", "Peace", "Self-repair"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -710,7 +710,7 @@ const app = {
                 },
                 "51": {
                   "name": "Ace of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swordsAce.png",
                   "keywords": ["Triumph", "Conquest", "Victory"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -724,7 +724,7 @@ const app = {
                 },
                 "52": {
                   "name": "Two of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords02.png",
                   "keywords": ["Guarded exchanges", "Reservations", "Hesitation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -738,7 +738,7 @@ const app = {
                 },
                 "53": {
                   "name": "Three of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords03.png",
                   "keywords": ["Pain", "Attack", "Double-crossing"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -752,7 +752,7 @@ const app = {
                 },
                 "54": {
                   "name": "Four of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords04.png",
                   "keywords": ["Retreat", "Solitude", "Meditation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -766,7 +766,7 @@ const app = {
                 },
                 "55": {
                   "name": "Five of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords05.png",
                   "keywords": ["Loss", "Destruction", "Dishonor"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -780,7 +780,7 @@ const app = {
                 },
                 "56": {
                   "name": "Six of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords06.png",
                   "keywords": ["Journey", "Leadership", "Guidance"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -794,7 +794,7 @@ const app = {
                 },
                 "57": {
                   "name": "Seven of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords07.png",
                   "keywords": ["Ill-advised scheme", "Ignorance", "Hot mess"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -808,7 +808,7 @@ const app = {
                 },
                 "58": {
                   "name": "Eight of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords08.png",
                   "keywords": ["Limits", "Shackles", "Restraints"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -822,7 +822,7 @@ const app = {
                 },
                 "59": {
                   "name": "Nine of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords09.png",
                   "keywords": ["Sorrow", "Desolation", "Isolation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -836,7 +836,7 @@ const app = {
                 },
                 "60": {
                   "name": "Ten of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swords10.png",
                   "keywords": ["Mob mentality", "Attacks", "Betrayal"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -850,7 +850,7 @@ const app = {
                 },
                 "61": {
                   "name": "Page of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swordsPage.png",
                   "keywords": ["Alertness", "Excitement", "Energy"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -864,7 +864,7 @@ const app = {
                 },
                 "62": {
                   "name": "Knight of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swordsKnight.png",
                   "keywords": ["War", "Resistance", "Defence"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -878,7 +878,7 @@ const app = {
                 },
                 "63": {
                   "name": "Queen of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swordsQueen.png",
                   "keywords": ["Logic", "Intelligence", "Wisdom"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -892,7 +892,7 @@ const app = {
                 },
                 "64": {
                   "name": "King of Swords",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_swordsKing.png",
                   "keywords": ["Dogma", "Standards", "Traditional success"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -906,7 +906,7 @@ const app = {
                 },
                 "65": {
                   "name": "Ace of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentaclesAce.png",
                   "keywords": ["New opportunity", "Reasonable expectations", "Initial investment"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -920,7 +920,7 @@ const app = {
                 },
                 "66": {
                   "name": "Two of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles02.png",
                   "keywords": ["Multitasking", "Joy in work", "Stimulation"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -934,7 +934,7 @@ const app = {
                 },
                 "67": {
                   "name": "Three of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles03.png",
                   "keywords": ["Admiration", "Recognition", "Skill"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -948,7 +948,7 @@ const app = {
                 },
                 "68": {
                   "name": "Four of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles04.png",
                   "keywords": ["Self-protection", "Holding fast", "Risk aversion"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -962,7 +962,7 @@ const app = {
                 },
                 "69": {
                   "name": "Five of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles05.png",
                   "keywords": ["Loss", "Poverty", "Hard times"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -976,7 +976,7 @@ const app = {
                 },
                 "70": {
                   "name": "Six of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles06.png",
                   "keywords": ["Gifts", "Charity", "Attention"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -990,7 +990,7 @@ const app = {
                 },
                 "71": {
                   "name": "Seven of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles07.png",
                   "keywords": ["Fruits of one's labor", "Harvest", "Payoff"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1004,7 +1004,7 @@ const app = {
                 },
                 "72": {
                   "name": "Eight of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles08.png",
                   "keywords": ["Employment", "Skill", "Hard work"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1018,7 +1018,7 @@ const app = {
                 },
                 "73": {
                   "name": "Nine of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles09.png",
                   "keywords": ["Safety", "Financial success", "Splendor"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1032,7 +1032,7 @@ const app = {
                 },
                 "74": {
                   "name": "Ten of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentacles10.png",
                   "keywords": ["Riches", "Gains", "Household wealth"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1046,7 +1046,7 @@ const app = {
                 },
                 "75": {
                   "name": "Page of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentaclesPage.png",
                   "keywords": ["Discovery", "New opportunity", "New venture"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1060,7 +1060,7 @@ const app = {
                 },
                 "76": {
                   "name": "Knight of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentaclesKnight.png",
                   "keywords": ["Responsibility", "Steadfastness", "Integrity"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1074,7 +1074,7 @@ const app = {
                 },
                 "77": {
                   "name": "Queen of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentaclesQueen.png",
                   "keywords": ["Security", "Generosity", "Magnificence"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1088,7 +1088,7 @@ const app = {
                 },
                 "78": {
                   "name": "King of Pentacles",
-                  "imagePath": "./assets/images/cards/",
+                  "imagePath": "./assets/images/cards/card_pentaclesKing.png",
                   "keywords": ["Financial stability", "Self-control", "Executed plans"],
                   "meaning": "This card begs the questio... [coming soon]",
                   "description": "This card depicts... ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil. Measi a ganze es i mog di fei aasgem, Blosmusi. Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl wos, imma hogg di hera Guglhupf! Schorsch Spotzerl schnacksln Weiznglasl vui gschmeidig a ganze auf der Oim, da gibt’s koa Sünd, etza!",
@@ -1118,7 +1118,8 @@ const app = {
           "value": app.tarotDeckObj[cardNum].value,
           "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
           "suit": app.tarotDeckObj[cardNum].suit,
-          "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords
+          "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords,
+          "rotation": ""
         };
         return newCard;
       }
@@ -1132,7 +1133,8 @@ const app = {
           "value": app.tarotDeckObj[cardNum].value,
           "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
           "suit": app.tarotDeckObj[cardNum].suit,
-          "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords
+          "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords,
+          "rotation": "rotate-180deg"
         }
         return newCard;
       }
@@ -1240,7 +1242,7 @@ $("#reading-button").click(function() {
         <div>
           <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
               <div class="border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
-                <img src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
+                <img class="height-340px width-190px ${card.rotation}" src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
               </div>
           </div>
         </div>
