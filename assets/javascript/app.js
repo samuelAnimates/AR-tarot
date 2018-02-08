@@ -1119,7 +1119,7 @@ const app = {
           "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
           "suit": app.tarotDeckObj[cardNum].suit,
           "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords,
-          "rotation": ""
+          "rotation": "0"
         };
         return newCard;
       }
@@ -1134,7 +1134,7 @@ const app = {
           "valueKeywords": app.tarotDeckObj[cardNum].valueKeywords,
           "suit": app.tarotDeckObj[cardNum].suit,
           "suitKeywords": app.tarotDeckObj[cardNum].suitKeywords,
-          "rotation": "rotate-180deg"
+          "rotation": "180"
         }
         return newCard;
       }
@@ -1242,7 +1242,7 @@ $("#reading-button").click(function() {
         <div>
           <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
               <div class="border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
-                <img class="height-340px width-190px ${card.rotation}" src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
+                <img class="height-340px width-190px rotate-${card.rotation}deg" src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
               </div>
           </div>
         </div>
@@ -1258,42 +1258,59 @@ $("#reading-button").click(function() {
 });
 
 $("#ar-button").click(function() {
+  
+  //Draw the tarot cards for a 3-card reading from a 78-card deck
+  const drawnCards = app.drawCardsFunc(78,3);
+  
+  //Style the body of the html for a fullscreen view with no scrollbars
   $("body").css( {
     "margin": "0px",
     "overflow": "hidden"
   } );
+  
+  //Remove the header and footer to preserve an uninterrupted full-screen display
   $("header").remove();
+  $("footer").html("");
+
+  //Embed a-frame into the page to display AR Reading for a 3-card reading
   $("main").html(`
     <a-scene arjs>
       <a-assets>
-        <img id="past-image" src="https://vignette.wikia.nocookie.net/dishonoredvideogame/images/f/fb/Tarot_back.png">
-        <img id="present-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Illustr._Nemo_-_L’Amitié_1884%2C_page_11.png/557px-Illustr._Nemo_-_L’Amitié_1884%2C_page_11.png">
-        <img id="future-image" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Karten_Homoeopathie_Tarot-215x300.png">
+        <img id="past-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[0].imagePath.slice(1)}"/>
+        <img id="present-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[1].imagePath.slice(1)}"/>
+        <img id="future-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[2].imagePath.slice(1)}"/>
       </a-assets>
       <a-marker-camera preset="hiro">
-          <a-entity position="-1 0 0">
-            <!-- Using the asset management system. -->
-            <a-image width=".6" height="1.05" src="#past-image" rotation="0 0 0"></a-image>
-            <a-text value="Past" position="0 1.05 0"></a-text>
-          </a-entity>
-          <a-entity position="0 0 0">
+        <a-entity position="-1 0 0">
           <!-- Using the asset management system. -->
-          <a-image width=".6" height="1.05" src="#present-image" rotation="0 0 0"></a-image>
-          <a-text value="Present" position="0 1.05 0"></a-text>
+          <a-image width=".6" height="1.05" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
+          <a-text align="center" anchor="center" value="Past" position="0 1.05 0"></a-text>
+          <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 .7 0"></a-entity>
+        </a-entity>
+        <a-entity position="0 0 0">
+        <!-- Using the asset management system. -->
+          <a-image width=".6" height="1.05" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
+          <a-text align="center" anchor="center" value="Present" position="0 1.05 0"></a-text>
+          <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 .7 0"></a-entity>
         </a-entity>
         <a-entity position="1 0 0">
-        <!-- Using the asset management system. -->
-        <a-image width=".6" height="1.05" src="#future-image" rotation="0 0 0"></a-image>
-        <a-text value="Future" position="0 1.05 0"></a-text>
-      </a-entity>
+            <!-- Using the asset management system. -->
+            <a-image width=".6" height="1.05" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
+            <a-text align="center" anchor="center" value="Future" position="0 1.05 0"></a-text>
+            <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 .7 0"></a-entity>
+        </a-entity>
       </a-marker-camera>
     </a-scene>
+    
+    <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
     <script>
       $("body").append('<button id="AYYLMAO" class="float-left position-absoltue z-1000">AY LMAO</button>');
       $("#AYYLMAO").click(function() {
         $( this ).remove();
       });
     </script>
+    <!-- Make sure we still have access to the JS we need to reset the page without -->
+    <script src="./assets/javascript/app.js"></script>
     `
   );
 });
