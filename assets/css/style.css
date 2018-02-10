@@ -75,6 +75,11 @@ table {
 }
 
 /* Fancy classes */
+button:hover, button:focus{
+	background-color: black;
+	background-image: url("../images/cardboard_black.png");
+	color: rgb(242,242,207);
+}
 .border-stitched{
 	border: 7px dashed rgb(29, 29, 29);
 	border-image: url("../images/stitch-border.png");
@@ -162,6 +167,9 @@ table {
 .font-size-p9em{
 	font-size: 0.9em;
 }
+.font-size-1p5em{
+	font-size: 1.5em;
+}
 .font-size-1p75em{
 	font-size: 1.75em;
 }
@@ -206,6 +214,9 @@ table {
 }
 .min-width-270px{
 	min-width: 270px;
+}
+.one-half-responsive-container{
+	width: 100%;
 }
 .padding-bottom-p25em{
 	padding-bottom: 0.25em;
@@ -329,4 +340,11 @@ table {
 }
 .z-1000{
 	z-index: 4000;
+}
+
+/* Responsive sizes */
+@media screen and (min-width: 800px) {
+    .one-half-responsive-container{
+		width: 50%;
+	}
 }

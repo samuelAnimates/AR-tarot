@@ -1150,6 +1150,72 @@ const app = {
     return finalCardsArray;
   },
 
+  //display a 2D tarot reading on the page
+  "display2DReadingFunc": (cardsArrayToDisplay)=>{
+    $("main").append(`
+    <section class="clear-both font-roboto-slab">  
+      <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-top-2em position-realtive text-center" id="fabric-backdrop">
+        <h2 class="font-size-1p75em font-special-elite">Results</h2>
+      </div>
+    </section>`
+    );
+    
+    //Display a section that explains how to interpret the reading
+    $("main").prepend(`
+      <!-- This section explains how to interpret the reading -->
+      <section class="padding-bottom-2em">
+        <div class="border-torn box-shadow-1px-neg2px-5px-29rgb margin-auto" id="explanation-section">
+            <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
+                <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret the cards:</h2>
+                <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
+                    <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit</p>
+                </div>
+            </div>
+        </div>
+      </section>`
+    );
+  
+    app.displayCardsInDivFunc(cardsArrayToDisplay);
+
+  },
+
+  "displayCardsInDivFunc": (cardsArray)=>{
+    if (cardsArray.length === 3){
+      //Display a div containing the relevant info for each card in a reading, in the #fabric-backdrop div
+      $("#fabric-backdrop").append(cardsArray.map(card => {return `
+        <!-- This div holds all of the reading information for each card -->
+        <div class="clear-both padding-bottom-2em padding-top-1em">
+          <!-- This div contains the card role in the reading, and card meaning keywords -->
+          <div class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite margin-auto max-width-16em min-width-5em padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p25em text-center width-75pc">
+            <div class="border-stitched border-radius-10px padding-left-p25em padding-right-p25em padding-top-p5em">
+              <h3><span class="text-underline">${card.role}</span>: <span class="font-size-p8em">${card.name}.</span></h3>
+              <div class="font-size-p5em line-height-1p3em padding-bottom-p5em padding-top-p5em">
+                <span class="text-underline">Keywords</span>: ${card.keywords.map(keyword => {return `<span class="display-inline-block font-size-p9em">&nbsp;${keyword}</span>`})}.
+              </div>
+            </div>
+          </div>
+        <!-- This div holds the card, the illustration description, and meaning -->
+          <div class="clear-both padding-top-1em">
+            <div>
+              <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
+                  <div class="border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+                    <img class="height-340px width-190px rotate-${card.rotation}deg" src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
+                  </div>
+              </div>
+            </div>
+            <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
+              <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
+                <p id="${card.role}-card-description"><span class="text-underline">Illustration description</span>: <span class="font-size-p9em">${card.description}</span></p>
+                <p class="padding-top-p5em">${card.meaning}</p>
+              </div>
+            </div>
+          </div>
+        </div>`
+      }))
+    };
+  },
+
+  //Display keywords in AR
   "displayCardKeywordsFunc": (keywordsArray)=>{
     keywordsArray.map(keyword => {`<li>${keyword}</li>`});
   },
@@ -1169,6 +1235,69 @@ const app = {
 
     //Shorten the array to the given length, representing the drawn cards from the shuffled deck
     return randomNumberArray.splice(maxNum - nNum);
+  },
+
+  "resetPageFunc": ()=>{
+    
+    //clear the drawnCardsArray
+    app.drawnCardsArray = [];
+
+    //Insert header (title) into the body of the page
+    $("#body-container").prepend(`
+      <header class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-2p75em font-special-elite margin-auto max-width-10em min-width-5em padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p25em text-center width-75pc">
+        <div class="border-stitched border-radius-10px padding-top-p5em">
+            <h1>AR-TAROT</h1>
+        </div>
+      </header>`
+    );
+    
+    //Insert intro content into the main section of the page
+    $("main").prepend(`
+      <!-- This section explains the point of this web app -->
+      <section class="border-torn box-shadow-1px-neg2px-5px-29rgb float-left one-half-responsive-container" id="intro-section">
+          <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
+              <h2 class="font-size-1p75em font-special-elite padding-right-2em">What is AR-TAROT?</h2>
+              <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
+                  <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit</p>
+              </div>
+          </div>
+      </section>
+      <!-- This section holds a display deck and the buttons to retrieve a reading -->
+      <section class="float-left padding-left-1p5em padding-right-1p5em one-half-responsive-container" id="display-deck">
+          <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
+              <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg2px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
+                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-neg2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute rotate-1 top-3px width-230px z-neg1">
+                  </div>
+                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-6px position-absolute rotate-neg3 top-10px width-230px z-neg2">
+                  </div>
+                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute top-6px width-230px z-1">
+                      <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="float-left width-50pc">
+              <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="start-reading-button">  
+                Get a reading.
+              </button>
+          </div>
+      </section>`);
+
+      //Insert footer (credits) into body of the page
+      $("#body-container").append(`
+        <footer class="clear-both font-size-p8em margin-auto padding-top-2em width-75pc">
+          <div class="border-torn box-shadow-1px-neg2px-5px-29rgb">
+              <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-p25em padding-left-2em padding-top-p25em">
+                  <div class="font-roboto-slab font-size-p8em line-height-1p3em padding-right-1em">
+                      <p>
+                          Card interpretations and descriptions adapted from "The Pictorial Key to the Tarot" by AE Waite, with illustrations by Pamela Colman Smith. Credit to John B. Hare at <a href="http://www.sacred-texts.com">www.sacred-texts.com</a> for digitizing and archiving the source material.Background patterns edited from Subtle Patterns at <a href="https://www.toptal.com/designers/subtlepatterns/">www.toptal.com</a>.
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </footer>`
+    );
+
   },
 
   //shuffle a given array
@@ -1193,124 +1322,165 @@ const app = {
 
 };
 
-$("#reading-button").click(function() {
-  
-  //Draw the tarot cards for a 3-card reading from a 78-card deck
-  const drawnCards = app.drawCardsFunc(78,3);
+// Initialize the page when the document has loaded
+$( document ).ready(function() {
 
-  //Remove the intro elements from the page and display the tarot reading results
-  $("#intro-section").remove();
-  $("#display-deck").remove();
-  $("main").append(`
-  <section class="clear-both font-roboto-slab">  
-    <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-top-2em position-realtive text-center" id="fabric-backdrop">
-      <h2 class="font-size-1p75em font-special-elite">Results</h2>
-    </div>
-  </section>`
-  );
+  //Set the page to its initial state
+  app.resetPageFunc();
+
+  //Start the tarot reading
+  $("#start-reading-button").click(function() {
   
-  //Display a section that explains how to interpret the reading
-  $("main").prepend(`
-    <!-- This section explains how to interpret the reading -->
-    <section class="padding-bottom-2em">
-      <div class="border-torn box-shadow-1px-neg2px-5px-29rgb margin-auto" id="explanation-section">
-          <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
-              <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret the cards:</h2>
-              <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
-                  <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit</p>
-              </div>
+    //Remove the intro elements from the page and display the tarot reading results
+    $("#intro-section").remove();
+    $("#display-deck").remove();
+
+    //Display the topic choices for this reading
+    $("main").append(`
+      <div class="margin-auto text-center">
+        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Career">
+              Career.
+            </button>
           </div>
-      </div>
-    </section>`
-  );
-
-  //Display a div containing the relevant info for each card in a reading.
-  $("#fabric-backdrop").append(drawnCards.map(card => {return `
-    <!-- This div holds all of the reading information for each card -->
-    <div class="clear-both padding-bottom-2em padding-top-1em">
-      <!-- This div contains the card role in the reading, and card meaning keywords -->
-      <div class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite margin-auto max-width-16em min-width-5em padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p25em text-center width-75pc">
-        <div class="border-stitched border-radius-10px padding-left-p25em padding-right-p25em padding-top-p5em">
-          <h3><span class="text-underline">${card.role}</span>: <span class="font-size-p8em">${card.name}.</span></h3>
-          <div class="font-size-p5em line-height-1p3em padding-bottom-p5em padding-top-p5em">
-            <span class="text-underline">Keywords</span>: ${card.keywords.map(keyword => {return `<span class="display-inline-block font-size-p9em">&nbsp;${keyword}</span>`})}.
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Romance">
+              Romance.
+            </button>
           </div>
         </div>
-      </div>
-      <!-- This div holds the card, the illustration description, and meaning -->
-      <div class="clear-both padding-top-1em">
-        <div>
-          <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
-              <div class="border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
-                <img class="height-340px width-190px rotate-${card.rotation}deg" src="${card.imagePath}" alt="'${card.name}' illustration by Pamela Colman Smith" aria-describedby="${card.role}-card-description">
-              </div>
+        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Friendship">
+              Friendship.
+            </button>
+          </div>
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Family">
+              Family.
+            </button>
           </div>
         </div>
-        <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
-          <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
-            <p id="${card.role}-card-description"><span class="text-underline">Illustration description</span>: <span class="font-size-p9em">${card.description}</span></p>
-            <p class="padding-top-p5em">${card.meaning}</p>
+        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Self">
+              Self.
+            </button>
+          </div>
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Community">
+              Community.
+            </button>
           </div>
         </div>
-      </div>
-    </div>
-  `}));
-});
+      </div>`
+    );
 
-$("#ar-button").click(function() {
-  
-  //Draw the tarot cards for a 3-card reading from a 78-card deck
-  const drawnCards = app.drawCardsFunc(78,3);
-  
-  //Style the body of the html for a fullscreen view with no scrollbars
-  $("body").css( {
-    "margin": "0px",
-    "overflow": "hidden"
-  } );
-  
-  //Remove the header and footer to preserve an uninterrupted full-screen display
-  $("header").remove();
-  $("footer").html("");
+  });
 
-  //Embed a-frame into the page to display AR Reading for a 3-card reading
-  $("main").html(`
-    <a-scene arjs>
-      <a-assets>
-        <img id="past-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[0].imagePath.slice(1)}"/>
-        <img id="present-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[1].imagePath.slice(1)}"/>
-        <img id="future-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[2].imagePath.slice(1)}"/>
-      </a-assets>
-      <a-marker-camera preset="hiro">
-        <a-entity position="-1 0 0">
-          <!-- Using the asset management system. -->
-          <a-image width=".6" height="1.05" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
-          <a-text align="center" anchor="center" value="Past" position="0 1.05 0"></a-text>
-          <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 .7 0"></a-entity>
-        </a-entity>
-        <a-entity position="0 0 0">
-        <!-- Using the asset management system. -->
-          <a-image width=".6" height="1.05" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
-          <a-text align="center" anchor="center" value="Present" position="0 1.05 0"></a-text>
-          <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 .7 0"></a-entity>
-        </a-entity>
-        <a-entity position="1 0 0">
-            <!-- Using the asset management system. -->
-            <a-image width=".6" height="1.05" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
-            <a-text align="center" anchor="center" value="Future" position="0 1.05 0"></a-text>
-            <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 .7 0"></a-entity>
-        </a-entity>
-      </a-marker-camera>
-    </a-scene>
+  //Prepare the reading for display. Let users choose whether they want their reading in AR or directly on the screen.
+  $("body").delegate(".JS-reading-topic-button", "click", function(){
     
-    <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
-    <script>
-      $("body").append('<button id="AYYLMAO" class="float-left position-absoltue z-1000">AY LMAO</button>');
-      $("#AYYLMAO").click(function() {
-        $( this ).remove();
-      });
-    </script>
-    <!-- Make sure we still have access to the JS we need to reset the page without -->
-    <script src="./assets/javascript/app.js"></script>
-    `
-  );
+    //Draw the tarot cards for a 3-card reading from a 78-card deck
+    //If you want to change the type of reading or switch out the deck for one of a different size, this is where I've hard-coded numbers
+    app.drawnCardsArray = app.drawCardsFunc(78,3);
+
+
+    $("main").html(`
+      <!-- This section holds a display deck and the buttons to retrieve a reading -->
+      <section class="margin-auto padding-left-1p5em padding-right-1p5em one-half-responsive-container" id="display-deck">
+          <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
+              <p>For 15 seconds, think of a problem you're trying to solve or a goal you're trying to achieve in the field of ${this.id}</p>
+              <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg2px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
+                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-neg2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute rotate-1 top-3px width-230px z-neg1">
+                  </div>
+                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-6px position-absolute rotate-neg3 top-10px width-230px z-neg2">
+                  </div>
+                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute top-6px width-230px z-1">
+                      <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="float-left width-50pc">
+              <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="ar-button">  
+                Yes.
+              </button>
+              <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="display-reading-button">  
+                No.
+              </button>
+          </div>
+      </section>`
+    )
+  });
+
+  //Generate a tarot reading on the page
+  $("body").delegate("#display-reading-button", "click", function(){
+  
+    //Clear main section of page
+    $("main").html("");
+
+    //Display a reading with a given number of cards on the page
+    app.display2DReadingFunc(app.drawnCardsArray);
+
+  });
+  
+  //Generate an AR tarot reading
+  $("body").delegate("#ar-button", "click", function(){
+    //Draw the tarot cards for a 3-card reading from a 78-card deck
+    const drawnCards = app.drawCardsFunc(78,3);
+    
+    //Style the body of the html for a fullscreen view with no scrollbars
+    $("body").css( {
+      "margin": "0px",
+      "overflow": "hidden"
+    } );
+    
+    //Remove the header and footer to preserve an uninterrupted full-screen display
+    $("header").remove();
+    $("footer").remove();
+  
+    //Embed a-frame into the page to display AR Reading for a 3-card reading
+    $("main").html(`
+      <a-scene arjs>
+        <a-assets>
+          <img id="past-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[0].imagePath.slice(1)}"/>
+          <img id="present-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[1].imagePath.slice(1)}"/>
+          <img id="future-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[2].imagePath.slice(1)}"/>
+        </a-assets>
+        <a-marker-camera preset="hiro">
+          <a-entity position="-1 0 0">
+            <!-- Using the asset management system. -->
+              <a-image width=".6" height="1.05" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
+              <a-text align="center" anchor="center" value="Past" position="0 1.05 0"></a-text>
+              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 .7 0"></a-entity>
+          </a-entity>
+          <a-entity position="0 0 0">
+            <!-- Using the asset management system. -->
+              <a-image width=".6" height="1.05" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
+              <a-text align="center" anchor="center" value="Present" position="0 1.05 0"></a-text>
+              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 .7 0"></a-entity>
+            </a-entity>
+          <a-entity position="1 0 0">
+              <!-- Using the asset management system. -->
+              <a-image width=".6" height="1.05" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
+              <a-text align="center" anchor="center" value="Future" position="0 1.05 0"></a-text>
+              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 .7 0"></a-entity>
+          </a-entity>
+        </a-marker-camera>
+      </a-scene>
+      
+      <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
+      <script>
+        $("body").append('<button id="AYYLMAO" class="float-left position-absoltue z-1000">AY LMAO</button>');
+        $("#AYYLMAO").click(function() {
+          $( this ).remove();
+        });
+      </script>
+      <!-- Make sure we still have access to the JS we need to reset the page without -->
+      <script src="./assets/javascript/app.js"></script>`
+    );
+  });
 });
+
