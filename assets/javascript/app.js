@@ -1275,11 +1275,11 @@ const app = {
                       </div>
                   </div>
               </div>
-          </div>
-          <div class="float-left width-50pc">
-              <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="start-reading-button">  
-                Get a reading.
-              </button>
+              <div class="padding-top-1p5em text-center">
+                <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="start-reading-button">  
+                  Get a reading.
+                </button>
+              </div>
           </div>
       </section>`);
 
@@ -1389,28 +1389,51 @@ $( document ).ready(function() {
 
     $("main").html(`
       <!-- This section holds a display deck and the buttons to retrieve a reading -->
-      <section class="margin-auto padding-left-1p5em padding-right-1p5em one-half-responsive-container" id="display-deck">
-          <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
-              <p>For 15 seconds, think of a problem you're trying to solve or a goal you're trying to achieve in the field of ${this.id}</p>
-              <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg2px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
-                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-neg2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute rotate-1 top-3px width-230px z-neg1">
-                  </div>
-                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-6px position-absolute rotate-neg3 top-10px width-230px z-neg2">
-                  </div>
-                  <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute top-6px width-230px z-1">
-                      <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
-                      </div>
-                  </div>
+      <section class="margin-auto padding-left-1p5em padding-right-1p5em" id="display-deck">
+        <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
+          <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
+            <div class="padding-bottom-p5em">
+              <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
+                <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
+                  <p class="padding-top-p5em">
+                    For 15 seconds, reflect on a problem you're trying to solve or goal you're trying to achieve in the area of ${this.id}. Then continue to on this page to receive a Tarot reading that will help you examine the ways you may already be shaping the outcome.
+                  </p>
+                </div>
               </div>
+            </div>
+            <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg2px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
+                <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-neg2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute rotate-1 top-3px width-230px z-neg1">
+                </div>
+                <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-6px position-absolute rotate-neg3 top-10px width-230px z-neg2">
+                </div>
+                <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute top-6px width-230px z-1">
+                    <div class="background-image-floral border-color-0-62-51 border-style-double border-width-5px height-350px width-200px">
+                    </div>
+                </div>
+            </div>
+            <div class="padding-bottom-1em padding-top-2em">
+              <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
+                <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
+                  <p class="padding-top-p5em">
+                    Can you currently use a cell phone camera or webcam, as well as <a href target="_blank" src="https://commons.wikimedia.org/wiki/File%3AHiro_marker_ARjs.png">a standard paper Hiro placemarker</a> for an augmented-reality tarot reading?
+                  </p>
+                </div>
+                <div class="padding-top-p5em text-center">
+                  <div class="display-inline-block padding-right-1em">
+                    <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="ar-button">  
+                      Yes.
+                    </button>
+                  </div>
+                  <div class="display-inline-block padding-left-1em">
+                    <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="display-reading-button">  
+                      No.
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="float-left width-50pc">
-              <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="ar-button">  
-                Yes.
-              </button>
-              <button class="background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p5em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="display-reading-button">  
-                No.
-              </button>
-          </div>
+        </div>
       </section>`
     )
   });
@@ -1472,13 +1495,8 @@ $( document ).ready(function() {
       </a-scene>
       
       <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
-      <script>
-        $("body").append('<button id="AYYLMAO" class="float-left position-absoltue z-1000">AY LMAO</button>');
-        $("#AYYLMAO").click(function() {
-          $( this ).remove();
-        });
-      </script>
-      <!-- Make sure we still have access to the JS we need to reset the page without -->
+
+      <!-- Make sure we still have access to our JS-->
       <script src="./assets/javascript/app.js"></script>`
     );
   });
