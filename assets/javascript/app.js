@@ -299,7 +299,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wandsAce.png",
                   "keywords": ["Creation", "Invention", "Birth"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A hand springs forth from a cloud, holding a thick branch with budding leaves.",
                   "value": "Ace",
                   "valueKeywords": "New Beginnings, opportunity, starting point",
                   "suit": "Wands",
@@ -312,7 +312,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands02.png",
                   "keywords": ["Contemplation", "Dominion", "Comparison"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A tall man looks from a battlemented roof over the seashore. He holds a globe in his right hand and in his left hand rests a a tall woodne staff with a few budding branches. There is a second staff standing in a ring against a wall to his right. A rose, cross, and lily are found on a flag haning on the wall to his left.",
                   "value": "Two",
                   "valueKeywords": "Harmony, balance, duality",
                   "suit": "Wands",
@@ -325,7 +325,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands03.png",
                   "keywords": ["Enterprise", "Trade", "Cooperation"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A calm figure stands facing with their back to the viewer. They hold out their right arm to grasp and lean gently on a staff planted in the ground to his side. Behind him are two more staffs standing upright, similarly planted in the ground.",
                   "value": "Three",
                   "valueKeywords": "Connection, growth, creation",
                   "suit": "Wands",
@@ -338,7 +338,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands04.png",
                   "keywords": ["Safe haven", "Support", "Work-life balance"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "Four tall staffs stand in a line, with a large opening between the middle two. A lush garland of vines, leaves, and flowers is suspended between the outer two staffs. Visible in the large opening is a pair of women, holding small bouquets above their heads in celebration. Behnd them is a moat and a citadel.",
                   "value": "Four",
                   "valueKeywords": "Stability, structure, foundation",
                   "suit": "Wands",
@@ -351,7 +351,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands05.png",
                   "keywords": ["Competition", "Rat race", "Imitation"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A group of five boys are brandishing tall wooden staffs, play-fighting as if they were having a sword fight. Their postures indicate posing more than swift movement.",
                   "value": "Five",
                   "valueKeywords": "Challenge, adventure, unpredictability",
                   "suit": "Wands",
@@ -364,7 +364,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands06.png",
                   "keywords": ["Victory","Hope", "Good news"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A horseman wearng a laurel on his head holds a similarly laurelled staff in his right hand as he rides a white horse draped in cloth below the neck. Four additional staffs are visible plainly above the heads of obscured footmen in the background.",
                   "value": "Six",
                   "valueKeywords": "Equality, beauty, union",
                   "suit": "Wands",
@@ -377,7 +377,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands07.png",
                   "keywords": ["Deliberations", "Negotiations", "Competition"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A young man on a rocky precipice defends himself with a wooden staff as 6 staffs jut out from the bottom of the card to attack him.",
                   "value": "Seven",
                   "valueKeywords": "Evolution, change, processing",
                   "suit": "Wands",
@@ -389,7 +389,7 @@ const app = {
                   "name": "Eight of Wands",
                   "imagePath": "./assets/images/cards/card_wands08.png",
                   "keywords": ["Motion", "Forward momentum", "High speed"],
-                  "meaning": "This card begs the questio... [coming soon]",
+                  "meaning": "Eight wooden staffs are suspended in mid-air, diagonally oriented from the lower right side of the card to the upper left, where their image is cut off. It is unclear whether they are flying upward to the left or falling dawn to the right.",
                   "description": "[coming soon]",
                   "value": "Eight",
                   "valueKeywords": "Cycles, reconstruction, reiteration",
@@ -403,7 +403,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands09.png",
                   "keywords": ["Strength", "Stamina", "Defense"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A man on a roof or other outlook leans upon a wooden staff with budding leaves. Behind him stand eight other staffs in a straight line. A mountain range is visible in the background, in the spaces between the staffs.",
                   "value": "Nine",
                   "valueKeywords": "Gratification, realization, recognition",
                   "suit": "Wands",
@@ -416,7 +416,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wands10.png",
                   "keywords": ["Gains", "Burdens", "Hard-won success"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A man with his back to the viewer struggles to carry a fanned-out bundle of ten tall staffs. His left arm is wrapped around the lower end of the staffs to keep them together, while he uses his right arm to try to keep the bundle from fanning out and falling.",
                   "value": "Ten",
                   "valueKeywords": "Culmination, perfection, resolution",
                   "suit": "Wands",
@@ -429,7 +429,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wandsPage.png",
                   "keywords": ["Unbridled ambition", "Creative spark", "Experimentation"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "A young man in luxurious clothes and a feathered hat holds a tall staff. His eyes are fixed on the budding leaves at its top and he stands tall.",
                   "value": "Page",
                   "valueKeywords": "New energy, new beginnings, spark",
                   "suit": "Wands",
@@ -440,9 +440,9 @@ const app = {
                 "34": {
                   "name": "Knight of Wands",
                   "imagePath": "./assets/images/cards/card_wandsKnight.png",
-                  "keywords": ["Flight", "Departure", "Three"],
+                  "keywords": ["Flight", "Departure", "Emigration"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "An armored knight is riding on a galloping horse, depicted in the middle of very swift movement. The knight holds a wooden staff with budding leaves in his right hand while he looks at the horse with concern.",
                   "value": "Knight",
                   "valueKeywords": "Extremes, changes, actions",
                   "suit": "Wands",
@@ -455,7 +455,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wandsQueen.png",
                   "keywords": ["Self-sustainment", "Self-confidence", "Self-reliance"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "The queen of wands sits on a tall throne with a budding staff in her right hand and a bright sunflower in her left. A black cat sits at her feet with its gaze directed at the viewer, while the queen looks off in the distance to her left.",
                   "value": "Queen",
                   "valueKeywords": "Mastery, understanding, finesse",
                   "suit": "Wands",
@@ -468,7 +468,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_wandsKing.png",
                   "keywords": ["Leadership","Vision","Direction"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "[coming soon]",
+                  "description": "The king of wands is presented to the viewer in three-quarters profile. He sits on a tall throne with his right hand supporting a tall budding staff in his right hand. His left hand is clenched at his side, as if ready to reach into a pocket. A lizard is on the ground to his left.",
                   "value": "King",
                   "valueKeywords": "Order, responsibility, command",
                   "suit": "Wands",
@@ -1408,24 +1408,37 @@ $( document ).ready(function() {
           <img id="present-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[1].imagePath.slice(1)}"/>
           <img id="future-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[2].imagePath.slice(1)}"/>
         </a-assets>
+        <!-- Display the card reading information above a standard Hiro marker, assumed to be printed out and lying on a flat surface. -->
         <a-marker-camera preset="hiro">
+          <!-- Display the card image, role, name, and keywords -->
           <a-entity position="-1 0 0">
-            <!-- Using the asset management system. -->
+              <!-- Display the card image using the asset management system -->
               <a-image width=".6" height="1.05" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
-              <a-text align="center" anchor="center" value="Past" position="0 1.05 0"></a-text>
-              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 .7 0"></a-entity>
+              <!-- Display the card role above the card -->
+              <a-text align="center" anchor="center" value="Past" position="0 1.45 0"></a-text>
+              <!-- Display the card name on a colored background below the card role -->
+              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 1.1 0"></a-entity>
+              <!-- Display the card keywords below the card -->
           </a-entity>
+          <!-- Display the card image, role, name, and keywords -->
           <a-entity position="0 0 0">
-            <!-- Using the asset management system. -->
+              <!-- Display the card image using the asset management system -->
               <a-image width=".6" height="1.05" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
-              <a-text align="center" anchor="center" value="Present" position="0 1.05 0"></a-text>
-              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 .7 0"></a-entity>
+              <!-- Display the card role above the card -->
+              <a-text align="center" anchor="center" value="Present" position="0 1.45 0"></a-text>
+              <!-- Display the card name on a colored background below the card role -->
+              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 1.1 0"></a-entity>
+              <!-- Display the card keywords below the card -->
             </a-entity>
+          <!-- Display the card image, role, name, and keywords -->
           <a-entity position="1 0 0">
-              <!-- Using the asset management system. -->
+              <!-- Display the card image using the asset management system -->
               <a-image width=".6" height="1.05" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
-              <a-text align="center" anchor="center" value="Future" position="0 1.05 0"></a-text>
-              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 .7 0"></a-entity>
+              <!-- Display the card role above the card -->
+              <a-text align="center" anchor="center" value="Future" position="0 1.45 0"></a-text>
+              <!-- Display the card name on a colored background below the card role -->
+              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 1.1 0"></a-entity>
+              <!-- Display the card keywords below the card -->
           </a-entity>
         </a-marker-camera>
       </a-scene>
