@@ -1194,7 +1194,17 @@ const app = {
           <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
               <h2 class="font-size-1p75em font-special-elite padding-right-2em">What is AR-TAROT?</h2>
               <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
-                  <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit</p>
+                  <p>
+                    AR Tarot lets you tap into the power of tarot to analyze the forces shaping your future. If you have a goal or a problem, let AR Tarot provide a frame for self-discovery and reflection on your journey toward resolution.
+                  </p>
+                  <br/>
+                  <p>
+                    If you can use a smartphone camera or webcam right now, you can get a tarot reading using augmented reality. <a target="_blank" href="">Just print out a standard Hiro placemarker.</a> If you don't have access to a webcam/printer, or want a more in-depth description of the cards and their meaning, you can receive a tarot reading directly on this page.
+                  </p>
+                  <br/>
+                  <p>
+                    Press the "Get a Reading." button to get started.
+                  </p>
               </div>
           </div>
       </section>
@@ -1351,7 +1361,7 @@ $( document ).ready(function() {
               <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
                 <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
                   <p class="padding-top-p5em">
-                    Can you currently use a cell phone camera or webcam, as well as <a href target="_blank" src="https://commons.wikimedia.org/wiki/File%3AHiro_marker_ARjs.png">a standard paper Hiro placemarker</a> for an augmented-reality tarot reading?
+                    Can you currently use a cell phone camera or webcam, as well as a printed copy of <a href target="_blank" src="https://commons.wikimedia.org/wiki/File%3AHiro_marker_ARjs.png">a standard Hiro AR placemarker</a> for an augmented-reality tarot reading?
                   </p>
                 </div>
                 <div class="padding-top-p5em text-center">
