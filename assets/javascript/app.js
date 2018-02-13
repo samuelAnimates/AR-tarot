@@ -1088,18 +1088,21 @@ const app = {
 
   //display a 2D tarot reading on the page
   "display2DReadingFunc": (cardsArrayToDisplay)=>{
+    //scroll to the top of the page
+    window.scrollTo(0, 0);
+    //append the section of the page explaining how to interpret the reading
     $("main").append(`
     <section class="clear-both font-roboto-slab">  
       <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-top-2em position-realtive text-center" id="fabric-backdrop">
-        <h2 class="font-size-1p75em font-special-elite">Results</h2>
+        <h2 class="font-size-1p75em font-special-elite">Your Reading</h2>
       </div>
     </section>`
     );
     
     //Display a section that explains how to interpret the reading
-    $("main").prepend(`
+    $("#fabric-backdrop").prepend(`
       <!-- This section explains how to interpret the reading -->
-      <section class="padding-bottom-2em">
+      <section class="padding-bottom-2em padding-left-1p5em padding-right-1p5em">
         <div class="border-torn box-shadow-1px-neg2px-5px-29rgb margin-auto" id="explanation-section">
             <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
                 <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret the cards:</h2>
@@ -1195,11 +1198,15 @@ const app = {
               <h2 class="font-size-1p75em font-special-elite padding-right-2em">What is AR-TAROT?</h2>
               <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
                   <p>
-                    AR Tarot lets you tap into the power of tarot to analyze the forces shaping your future. If you have a goal or a problem, let AR Tarot provide a frame for self-discovery and reflection on your journey toward resolution.
+                    If you have a goal or a problem, let AR-Tarot provide a frame for self-discovery and reflection on your journey toward resolution.
                   </p>
                   <br/>
                   <p>
-                    If you can use a smartphone camera or webcam right now, you can get a tarot reading using augmented reality. <a target="_blank" href="">Just print out a standard Hiro placemarker.</a> If you don't have access to a webcam/printer, or want a more in-depth description of the cards and their meaning, you can receive a tarot reading directly on this page.
+                    To be clear, AR-Tarot will not predict your future. But it <span class="font-weight">will</span> provide questions and a framework to help you think about the future you're already building. What from your past is affecting the actions you're taking in the present? What habits are you presently forming that will affect what you do in the future? What version of the future do you already expect or fear, and how might you be living in a self-fulfilling prophecy?
+                  </p>
+                  <br/>
+                  <p>
+                    If you can use a smartphone camera or webcam right now, you can get a tarot reading using augmented reality. <a target="_blank" href="https://raw.githubusercontent.com/smendez92/AR-tarot/master/assets/images/HIRO.jpg">Just print out a standard Hiro placemarker.</a> If you don't have access to a webcam/printer, or want more in-depth descriptions of the cards, you can receive a tarot reading directly on this page.
                   </p>
                   <br/>
                   <p>
@@ -1342,7 +1349,7 @@ $( document ).ready(function() {
               <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
                 <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
                   <p class="padding-top-p5em">
-                    For 15 seconds, reflect on a problem you're trying to solve or goal you're trying to achieve in the area of ${this.id}. Then continue to on this page to receive a Tarot reading that will help you examine the ways you may already be shaping the outcome.
+                    For 15 seconds, reflect on a problem you're trying to solve or goal you're trying to achieve in the area of ${this.id}. Then continue on this page to receive a Tarot reading that will help you examine the ways you may already be shaping the outcome.
                   </p>
                 </div>
               </div>
@@ -1361,7 +1368,7 @@ $( document ).ready(function() {
               <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
                 <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
                   <p class="padding-top-p5em">
-                    Can you currently use a cell phone camera or webcam, as well as a printed copy of <a href target="_blank" src="https://commons.wikimedia.org/wiki/File%3AHiro_marker_ARjs.png">a standard Hiro AR placemarker</a> for an augmented-reality tarot reading?
+                    Can you currently use a cell phone camera or webcam, as well as a printed copy of <a target="_blank" href="https://raw.githubusercontent.com/smendez92/AR-tarot/master/assets/images/HIRO.jpg">a standard Hiro AR placemarker</a> for an augmented-reality tarot reading?
                   </p>
                 </div>
                 <div class="padding-top-p5em text-center">

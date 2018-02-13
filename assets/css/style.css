@@ -75,10 +75,25 @@ table {
 }
 
 /* Fancy classes */
-button:hover, button:focus{
+a:focus{
+	background-color: black;
+	color: rgb(242,242,207);
+}
+a:hover{
+	background-color: black;
+	color: rgb(242,242,207);
+	cursor: pointer;
+}
+button:focus{
 	background-color: black;
 	background-image: url("../images/cardboard_black.png");
 	color: rgb(242,242,207);
+}
+button:hover{
+	background-color: black;
+	background-image: url("../images/cardboard_black.png");
+	color: rgb(242,242,207);
+	cursor: pointer;
 }
 .border-stitched{
 	border: 7px dashed rgb(29, 29, 29);
@@ -178,6 +193,9 @@ button:hover, button:focus{
 }
 .font-special-elite{
 	font-family: 'Special Elite', cursive;
+}
+.font-weight{
+	font-weight: 700;
 }
 .height-340px{
 	height: 340px;
