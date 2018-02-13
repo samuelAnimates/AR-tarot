@@ -676,8 +676,8 @@ const app = {
                   "name": "Two of Swords",
                   "imagePath": "./assets/images/cards/card_swords02.png",
                   "keywords": ["Guarded exchanges", "Reservations", "Hesitation"],
-                  "meaning": "A blindfolded woman sits on a stone stool facing the viewer, on an outlook near the sea. She crosses her arms over her chest like a mummy, holding a long sword in each hand. A crescent moon shines overhead.",
-                  "description": "[coming soon]",
+                  "meaning": "[coming soon",
+                  "description": "A blindfolded woman sits on a stone stool facing the viewer, on an outlook near the sea. She crosses her arms over her chest like a mummy, holding a long sword in each hand. A crescent moon shines overhead.",
                   "value": "Two",
                   "valueKeywords": "Harmony, balance, duality",
                   "suit": "Swords",
@@ -1094,7 +1094,9 @@ const app = {
     $("main").append(`
     <section class="clear-both font-roboto-slab">  
       <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-top-2em position-realtive text-center" id="fabric-backdrop">
-        <h2 class="font-size-1p75em font-special-elite">Your Reading</h2>
+        <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
+          <h2 class="font-size-1p75em font-special-elite">Your Reading</h2>
+        </div>
       </div>
     </section>`
     );
@@ -1105,9 +1107,11 @@ const app = {
       <section class="padding-bottom-2em padding-left-1p5em padding-right-1p5em">
         <div class="border-torn box-shadow-1px-neg2px-5px-29rgb margin-auto" id="explanation-section">
             <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
-                <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret the cards:</h2>
+                <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret your reading</h2>
                 <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
-                    <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit</p>
+                    <p>
+                      A card has been drawn for each role in this reading. Each card might have been drawn in the upright orientation or in the "reversed" orientation, which means it has been drawn upside down and its meaning is changed. Find something in each card's illustration or description that resonates with the situation in life your reading is about. Use the prompts underneath each card to think about how the factors it represents are impacting your past, present, and future. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -1145,7 +1149,7 @@ const app = {
             <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
               <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
                 <p id="${card.role}-card-description"><span class="text-underline">Illustration description</span>: <span class="font-size-p9em">${card.description}</span></p>
-                <p class="padding-top-p5em">${card.meaning}</p>
+                <p class="padding-top-p5em"><span class="text-underline">Prompts</span>: ${card.meaning}</p>
               </div>
             </div>
           </div>
@@ -1243,7 +1247,7 @@ const app = {
               <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-p25em padding-left-2em padding-top-p25em">
                   <div class="font-roboto-slab font-size-p8em line-height-1p3em padding-right-1em">
                       <p>
-                          Card interpretations and descriptions adapted from "The Pictorial Key to the Tarot" by AE Waite, with illustrations by Pamela Colman Smith. Credit to John B. Hare at <a href="http://www.sacred-texts.com">www.sacred-texts.com</a> for digitizing and archiving the source material.Background patterns edited from Subtle Patterns at <a href="https://www.toptal.com/designers/subtlepatterns/">www.toptal.com</a>.
+                        Card interpretations and descriptions adapted from "The Pictorial Key to the Tarot" by AE Waite, with illustrations by Pamela Colman Smith. Credit to John B. Hare at <a href="http://www.sacred-texts.com">www.sacred-texts.com</a> for digitizing and archiving the source material.Background patterns edited from Subtle Patterns at <a href="https://www.toptal.com/designers/subtlepatterns/">www.toptal.com</a>.
                       </p>
                   </div>
               </div>
