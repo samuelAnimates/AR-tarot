@@ -1147,7 +1147,7 @@ const app = {
               </div>
             </div>
             <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
-              <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
+              <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p9em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
                 <p id="${card.role}-card-description"><span class="text-underline">Illustration description</span>: <span class="font-size-p9em">${card.description}</span></p>
                 <p class="padding-top-p5em"><span class="text-underline">Prompts</span>: ${card.meaning}</p>
               </div>
