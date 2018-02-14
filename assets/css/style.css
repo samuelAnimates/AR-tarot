@@ -143,8 +143,8 @@ button:hover{
 .border-width-5px{
 	border-width: 5px;
 }
-.box-shadow-1px-neg2px-5px-29rgb{
-	box-shadow: 1px -2px 5px rgb(29, 29, 29);
+.box-shadow-1px-neg4px-5px-29rgb{
+	box-shadow: 1px -4px 5px rgb(29, 29, 29);
 }
 .box-shadow-0-neg2px-2px-43rgb-p3a{
 	box-shadow: 1px -2px 2px rgba(43, 43, 43, 0.3);

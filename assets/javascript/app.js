@@ -10,14 +10,14 @@ const app = {
                   //Card meaning keywords for the upright orientation
                   "keywords": ["Intoxication", "Extravagance", "Delusional"],
                   //More detailed card meaning for the upright orientation
-                  "meaning": "This card begs the questio... [coming soon]",
+                  "meaning": "The Fool is fully enjoying himself, fully ignorant of the danger that awaits him at his next step. Will your situation be fully understood before it's too late?",
                   "description": "A young man in short, luxurious robe stands in ecstasy at the edge of a cliff. He holds a atchel attached to a stick in his right hand, resting on his right shoulder. In his left hand he holds a white rose. He looks up at the sky, avoiding the sight of the steep drop below him. A small, excited dog stands beside him.",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
                   //More detailed card meaning for the upside-down orientation
-                  "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
+                  "reverseMeaning": "In the reverse orientation, the Fool knows how precarious his situation is; he just chooses to ignore it. Where might there be willful ignorance in your situation at hand?",
                   //Card meaning keywords for the upside-down orientation
                   "reverseKeywords": ["Vanity","Carelessness","Apathy"]
                 },
@@ -25,39 +25,39 @@ const app = {
                   "name": "The Magician",
                   "imagePath": "./assets/images/cards/card_majorMagician.png",
                   "keywords": ["Subtlety", "Skill", "Will"],
-                  "meaning": "This card begs the questio... [coming soon]",
-                  "description": "A youthful figure in the robe of a magician, standing proudly with a confident smile. Floating above his head is an infinity sign. Around his waist is a belt that looks like a serpent eating its own tail. The magician's right hand is raised, holding a wand that looks like a double-ended lit candle. His left hand is pointing down to the earth. On the table in front of the Magician are the symbols of the four Tarot suits: pentacle, wand, sword, and cup. Beneath the tables are planted roses and lilies.",
+                  "meaning": "The Magician calls on you to channel his skill and subtlety. You are willing and capable, but are you aware of it yet?",
+                  "description": "A youthful figure in the robe of a magician, standing proudly with a confident smile. Floating above his head is an infinity sign. Around his waist is a belt that looks like a serpent eating its own tail. The magician's right hand is raised, holding a wand that looks like a candle lit at both ends. His left hand is pointing down to the earth. On the table in front of the Magician are the symbols of the four Tarot suits: pentacle, wand, sword, and cup. Beneath the tables are planted roses and lilies.",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
-                  "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
+                  "reverseMeaning": "In the reverse orientation, the Magician points out a lack of trust. Are you afraid of what others in a position of power or strength might do? Is there mistrust in this situation? Do you fear that someone else will do what you would if you were in their shoes?",
                   "reverseKeywords": ["Disquiet","Disgrace","Distrust"]
                 },
                 "3": {
                   "name": "The High Priestess",
                   "imagePath": "./assets/images/cards/card_majorHighPriestess.png",
                   "keywords": ["Wisdom", "Mystery", "Secrecy"],
-                  "meaning": "This card begs the questio... [coming soon]",
+                  "meaning": "The High Priestess is a wise and mysterious soul. Where is the element of secrecy and mystery in your situation? Who is the wise one in this sitation?",
                   "description": "The high priestess sits in a large throne, with a back covered in a palm leaf and pomegranate pattern. She is seated between the white and black pillars, inscribed with a J and B, respectively. She has the lunar crescent at her feet, a horned diadem on her head, with a globe in the middle place, and a large solar cross on her chest. The scroll in her hands is inscribed with the word Tora.",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
-                  "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
-                  "reverseKeywords": ["Superficiality","Conceit","Vapid"]
+                  "reverseMeaning": "In the reverse orientation, the High Priestess points out a lack of wisdom and depth. Does someone think they're wiser than they are? Where may there be a lack of self-awareness in this situation?",
+                  "reverseKeywords": ["Superficiality","Conceit","Stupidity"]
                 },
                 "4": {
                   "name": "The Empress",
                   "imagePath": "./assets/images/cards/card_majorEmpress.png",
                   "keywords": ["Fruitfulness","Nature","Provider"],
-                  "meaning": "This card begs the questio... [coming soon]",
+                  "meaning": "This card prompts you to think about the nurturers in your life. What nourishes you? Who do you care for? The Empress calls on you to acknowledge and celebrate that which fills you up.",
                   "description": "The empress sits on a throne filled with bilows and luxurious blankets. Her crown is made of 12 six-pointed stars. The shield by her feet is shaped like a heart and has the symbol of Venus inscribed on it. Her right hand is raised, holding a short scepter with a globe on the end. Her left hand rests on her lap. She sits in a lush forest, with a stream running behind her and a crop of wheat growing in front of her.",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
                   "suitKeywords": "Trump cards, important stages",
-                  "reverseMeaning": "In the reverse orientation, this card ... [coming soon]",
+                  "reverseMeaning": "In the reverse orientation, the Empress's nature as a provider has bled her dry. She's given too much of herself and has no energy left to handle her daily life. Have you been giving too much of yourself as well?",
                   "reverseKeywords": ["Unraveling","Overwhelming","Indecision"]
                 },
                 "5": {
@@ -91,7 +91,7 @@ const app = {
                   "imagePath": "./assets/images/cards/card_majorLovers.png",
                   "keywords": ["Respect", "Support", "Partnership"],
                   "meaning": "This card begs the questio... [coming soon]",
-                  "description": "The noon soon shines brightly in the background, and a winged angel appears in a cloud below it. In the foreground are two naked human figures, reminiscent of Adam and Eve. Behind the man is a plan bearing 12 fruits, and behind the woman is a sturdier fruit-bearing tree, with a snake coiled around it.",
+                  "description": "The noon sun shines brightly in the background, and a winged angel appears in a cloud below it. In the foreground are two naked human figures, reminiscent of Adam and Eve. Behind the man is a plan bearing 12 fruits, and behind the woman is a sturdier fruit-bearing tree, with a snake coiled around it.",
                   "value": "",
                   "valueKeywords": "",
                   "suit": "Major Arcana",
@@ -1079,8 +1079,11 @@ const app = {
     //add roles for readings with given card numbers
     if (finalCardsArray.length === 3){
       finalCardsArray[0].role="Past";
+      finalCardsArray[0].meaning = "Think about how your past is influencing your current situation. Does your past define your current goals? " + finalCardsArray[0].meaning;
       finalCardsArray[1].role="Present";
+      finalCardsArray[1].meaning = "Think about your current progress in regards to your query. Are you moving in the right direction? " + finalCardsArray[1].meaning;
       finalCardsArray[2].role="Future";
+      finalCardsArray[2].meaning = "Think about how your current habits and thought patterns are influencing the long-term outcome of your query. You are already building your future. " + finalCardsArray[2].meaning;
     }
 
     return finalCardsArray;
@@ -1093,10 +1096,7 @@ const app = {
     //append the section of the page explaining how to interpret the reading
     $("main").append(`
     <section class="clear-both font-roboto-slab">  
-      <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-top-2em position-realtive text-center" id="fabric-backdrop">
-        <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
-          <h2 class="font-size-1p75em font-special-elite">Your Reading</h2>
-        </div>
+      <div class="background-image-fabric box-shadow-1px-neg4px-5px-29rgb min-width-270px padding-top-2em position-realtive text-center" id="fabric-backdrop">
       </div>
     </section>`
     );
@@ -1105,12 +1105,12 @@ const app = {
     $("#fabric-backdrop").prepend(`
       <!-- This section explains how to interpret the reading -->
       <section class="padding-bottom-2em padding-left-1p5em padding-right-1p5em">
-        <div class="border-torn box-shadow-1px-neg2px-5px-29rgb margin-auto" id="explanation-section">
+        <div class="border-torn box-shadow-1px-neg4px-5px-29rgb margin-auto" id="explanation-section">
             <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
                 <h2 class="font-size-1p75em font-special-elite padding-right-2em">How to interpret your reading</h2>
                 <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
                     <p>
-                      A card has been drawn for each role in this reading. Each card might have been drawn in the upright orientation or in the "reversed" orientation, which means it has been drawn upside down and its meaning is changed. Find something in each card's illustration or description that resonates with the situation in life your reading is about. Use the prompts underneath each card to think about how the factors it represents are impacting your past, present, and future. 
+                      A card has been drawn for each role in this reading. Each card might have been drawn in the upright orientation or in the "reversed" orientation, which means it has been drawn upside down and its meaning is changed. Find something in each card's illustration or description that resonates with the situation in life your reading is about. Use the prompts underneath each card to think about you are impacted by the factors it represents. 
                     </p>
                 </div>
             </div>
@@ -1197,7 +1197,7 @@ const app = {
     //Insert intro content into the main section of the page
     $("main").prepend(`
       <!-- This section explains the point of this web app -->
-      <section class="border-torn box-shadow-1px-neg2px-5px-29rgb float-left one-half-responsive-container" id="intro-section">
+      <section class="border-torn box-shadow-1px-neg4px-5px-29rgb float-left one-half-responsive-container" id="intro-section">
           <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-1em padding-left-2em padding-top-2em">
               <h2 class="font-size-1p75em font-special-elite padding-right-2em">What is AR-TAROT?</h2>
               <div class="font-roboto-slab font-size-p9em line-height-1p3em padding-right-1em">
@@ -1221,8 +1221,8 @@ const app = {
       </section>
       <!-- This section holds a display deck and the buttons to retrieve a reading -->
       <section class="float-left padding-left-1p5em padding-right-1p5em one-half-responsive-container" id="display-deck">
-          <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
-              <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg2px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
+          <div class="background-image-fabric box-shadow-1px-neg4px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
+              <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg4px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
                   <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-neg2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute rotate-1 top-3px width-230px z-neg1">
                   </div>
                   <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-6px position-absolute rotate-neg3 top-10px width-230px z-neg2">
@@ -1243,7 +1243,7 @@ const app = {
       //Insert footer (credits) into body of the page
       $("#body-container").append(`
         <footer class="clear-both font-size-p8em margin-auto padding-top-2em width-75pc">
-          <div class="border-torn box-shadow-1px-neg2px-5px-29rgb">
+          <div class="border-torn box-shadow-1px-neg4px-5px-29rgb">
               <div class="background-0-87-72 background-image-lined-paper color-242-242-207 padding-bottom-p25em padding-left-2em padding-top-p25em">
                   <div class="font-roboto-slab font-size-p8em line-height-1p3em padding-right-1em">
                       <p>
@@ -1340,25 +1340,25 @@ $( document ).ready(function() {
   $("body").delegate(".JS-reading-topic-button", "click", function(){
     
     //Draw the tarot cards for a 3-card reading from a 78-card deck
-    //If you want to change the type of reading or switch out the deck for one of a different size, this is where I've hard-coded numbers
+    //If you want to change the type of reading or switch out the deck for one of a different size, this is where I've hard-coded numbers for the 2D reading. The AR reading is a different story.
     app.drawnCardsArray = app.drawCardsFunc(78,3);
 
 
     $("main").html(`
       <!-- This section holds a display deck and the buttons to retrieve a reading -->
       <section class="margin-auto padding-left-1p5em padding-right-1p5em" id="display-deck">
-        <div class="background-image-fabric box-shadow-1px-neg2px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
+        <div class="background-image-fabric box-shadow-1px-neg4px-5px-29rgb min-width-270px padding-bottom-1em padding-top-1p5em">
           <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
             <div class="padding-bottom-p5em">
               <div class="padding-left-1p5em padding-right-1p5em padding-top-1em">
                 <div class="background-248-248-248 background-image-white-paper box-shadow-0-neg2px-2px-43rgb-p3a font-size-p8em line-height-1p3em padding-bottom-p5em padding-left-1p5em padding-right-1p5em padding-top-1em">
                   <p class="padding-top-p5em">
-                    For 15 seconds, reflect on a problem you're trying to solve or goal you're trying to achieve in the area of ${this.id}. Then continue on this page to receive a Tarot reading that will help you examine the ways you may already be shaping the outcome.
+                    For 15 seconds, reflect on a problem you're trying to solve or goal you're trying to achieve in the area of ${this.id}. Then continue on this page to receive a Tarot reading on this topic.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg2px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
+            <div class="background-28-92-81 border-color-0-62-51 border-radius-10px border-width-1px box-shadow-1px-neg4px-5px-29rgb display-block height-380px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-relative width-230px z-1">
                 <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-neg2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px position-absolute rotate-1 top-3px width-230px z-neg1">
                 </div>
                 <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-6px position-absolute rotate-neg3 top-10px width-230px z-neg2">
@@ -1434,32 +1434,35 @@ $( document ).ready(function() {
           <!-- Display the card image, role, name, and keywords -->
           <a-entity position="-1 0 0">
               <!-- Display the card image using the asset management system -->
-              <a-image width=".6" height="1.05" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
+              <a-image width=".6" height="1.05" position="0 .4 0" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
               <!-- Display the card role above the card -->
-              <a-text align="center" anchor="center" value="Past" position="0 1.45 0"></a-text>
+              <a-text align="center" anchor="center" value="Past" position="0 1.35 0"></a-text>
               <!-- Display the card name on a colored background below the card role -->
               <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 1.1 0"></a-entity>
               <!-- Display the card keywords below the card -->
+              <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
           </a-entity>
           <!-- Display the card image, role, name, and keywords -->
           <a-entity position="0 0 0">
               <!-- Display the card image using the asset management system -->
-              <a-image width=".6" height="1.05" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
+              <a-image width=".6" height="1.05" position="0 .4 0" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
               <!-- Display the card role above the card -->
-              <a-text align="center" anchor="center" value="Present" position="0 1.45 0"></a-text>
+              <a-text align="center" anchor="center" value="Present" position="0 1.35 0"></a-text>
               <!-- Display the card name on a colored background below the card role -->
               <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 1.1 0"></a-entity>
               <!-- Display the card keywords below the card -->
+              <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
             </a-entity>
           <!-- Display the card image, role, name, and keywords -->
           <a-entity position="1 0 0">
               <!-- Display the card image using the asset management system -->
-              <a-image width=".6" height="1.05" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
+              <a-image width=".6" height="1.05" position="0 .4 0" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
               <!-- Display the card role above the card -->
-              <a-text align="center" anchor="center" value="Future" position="0 1.45 0"></a-text>
+              <a-text align="center" anchor="center" value="Future" position="0 1.35 0"></a-text>
               <!-- Display the card name on a colored background below the card role -->
               <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 1.1 0"></a-entity>
               <!-- Display the card keywords below the card -->
+              <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
           </a-entity>
         </a-marker-camera>
       </a-scene>
