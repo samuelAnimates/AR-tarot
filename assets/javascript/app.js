@@ -1120,6 +1120,16 @@ const app = {
   
     app.displayCardsInDivFunc(cardsArrayToDisplay);
 
+    //Create the reading reset button
+    $("#fabric-backdrop").append(`
+      <!-- A button that will allow us to move onto the 2d reading from the AR display -->
+      <div class="padding-bottom-1em padding-top-p5em">  
+          <button class="background-image-cardboard border-radius-10px display-inline-block font-size-1p75em font-special-elite margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center z-1" id="restart-button">
+            Get another reading.
+          </button>
+      </div>
+    `);
+
   },
 
   "displayCardsInDivFunc": (cardsArray)=>{
@@ -1137,7 +1147,7 @@ const app = {
               </div>
             </div>
           </div>
-        <!-- This div holds the card, the illustration description, and meaning -->
+          <!-- This div holds the card, the illustration description, and meaning -->
           <div class="clear-both padding-top-1em">
             <div>
               <div class="background-28-92-81 border-color-0-62-51-p1 border-radius-10px border-style-solid border-width-1px box-shadow-0-neg2px-2px-43rgb display-block height-380px left-2px margin-auto padding-bottom-15px padding-left-15px padding-right-15px padding-top-15px top-6px width-230px z-1">
@@ -1165,6 +1175,50 @@ const app = {
 
   //Array that will hold the cards drawn
   "drawnCardsArray": [],
+  
+  "displayReadingTopicChoices": ()=>{
+    //Display the topic choices for this reading
+    $("main").append(`
+      <div class="margin-auto text-center">
+        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Career">
+              Career.
+            </button>
+          </div>
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Romance">
+              Romance.
+            </button>
+          </div>
+        </div>
+        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Friendship">
+              Friendship.
+            </button>
+          </div>
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Family">
+              Family.
+            </button>
+          </div>
+        </div>
+        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Self">
+              Self.
+            </button>
+          </div>
+          <div class="display-inline-block padding-left-p25em padding-right-p25em">
+            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Community">
+              Community.
+            </button>
+          </div>
+        </div>
+      </div>`
+    );
+  },
 
   //Return an array of nNum unique random numbers between minNum (inclusive) and maxNum (inclusive).
   "genRandomNumberArrayFunc": (minNum, maxNum, nNum)=>{
@@ -1292,47 +1346,8 @@ $( document ).ready(function() {
     $("#intro-section").remove();
     $("#display-deck").remove();
 
-    //Display the topic choices for this reading
-    $("main").append(`
-      <div class="margin-auto text-center">
-        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
-          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
-            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Career">
-              Career.
-            </button>
-          </div>
-          <div class="display-inline-block padding-left-p25em padding-right-p25em">
-            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Romance">
-              Romance.
-            </button>
-          </div>
-        </div>
-        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
-          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
-            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Friendship">
-              Friendship.
-            </button>
-          </div>
-          <div class="display-inline-block padding-left-p25em padding-right-p25em">
-            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Family">
-              Family.
-            </button>
-          </div>
-        </div>
-        <div class="clear-both padding-bottom-p5em padding-top-p5em text-center">
-          <div class="display-inline-block padding-left-p25em padding-right-p25em">  
-            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Self">
-              Self.
-            </button>
-          </div>
-          <div class="display-inline-block padding-left-p25em padding-right-p25em">
-            <button class="JS-reading-topic-button background-image-cardboard border-radius-10px box-shadow-1px-neg3px-7px-29rgb font-size-1p75em font-special-elite line-height-1p3em margin-auto padding-bottom-p25em padding-left-p25em padding-right-p25em padding-top-p5em text-center" id="Community">
-              Community.
-            </button>
-          </div>
-        </div>
-      </div>`
-    );
+    //Display the topic choices for a reading
+    app.displayReadingTopicChoices();
 
   });
 
@@ -1405,11 +1420,22 @@ $( document ).ready(function() {
 
   });
   
-  //Restart Tarot-AR
+  //Restart Tarot-AR from a 2D reading
   $("body").delegate("#restart-button", "click", function(){
 
+    //clear the main section of the page
+    $("main").html("");
+
     //Set the page to its initial state
-    app.resetPageFunc();
+    app.displayReadingTopicChoices();
+  
+  });
+
+  //Restart Tarot-AR from an AR reading
+  $("body").delegate("#ar-restart-button", "click", function(){
+
+    //Set the page to its initial state
+    location.reload();
   
   });
 
@@ -1439,7 +1465,6 @@ $( document ).ready(function() {
   
     //Embed a-frame into the page to display AR Reading for a 3-card reading
     $("main").html(`
-      <div id="ar-reading">
         <a-scene arjs="debugUIEnabled: false;">
           <a-assets>
             <img id="past-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${app.drawnCardsArray[0].imagePath.slice(1)}"/>
@@ -1486,14 +1511,10 @@ $( document ).ready(function() {
         
         <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
         <div style="bottom:10px;" class="position-absolute text-center width-100pc z-1">  
-          <button class="background-image-cardboard border-radius-10px display-inline-block font-size-1p75em font-special-elite padding-bottom-p25em padding-left-p25em padding-right-p25em z-1" id="read-more-button">
-            Read More.
-          </button>
-          <button class="background-image-cardboard border-radius-10px display-inline-block font-size-1p75em font-special-elite padding-bottom-p25em padding-left-p25em padding-right-p25em z-1" id="restart-button">
+          <button class="background-image-cardboard border-radius-10px display-inline-block font-size-1p75em font-special-elite padding-bottom-p25em padding-left-p25em padding-right-p25em z-1" id="ar-restart-button">
             Restart.
           </button>
-        </div>
-      </div>`
+        </div>`
     );
   });
 });
