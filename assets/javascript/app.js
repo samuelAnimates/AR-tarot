@@ -1343,7 +1343,6 @@ $( document ).ready(function() {
     //If you want to change the type of reading or switch out the deck for one of a different size, this is where I've hard-coded numbers for the 2D reading. The AR reading is a different story.
     app.drawnCardsArray = app.drawCardsFunc(78,3);
 
-
     $("main").html(`
       <!-- This section holds a display deck and the buttons to retrieve a reading -->
       <section class="margin-auto padding-left-1p5em padding-right-1p5em" id="display-deck">
@@ -1406,10 +1405,27 @@ $( document ).ready(function() {
 
   });
   
+  //Restart Tarot-AR
+  $("body").delegate("#restart-button", "click", function(){
+
+    //Set the page to its initial state
+    app.resetPageFunc();
+  
+  });
+
+  //Display the 2D reading after a user chooses to see it from the AR screen
+  $("body").delegate("#read-more-button", "click", function(){
+
+    //Clear main section of page
+    $("main").html(" ");
+
+    //Display a reading with a given number of cards on the page
+    app.display2DReadingFunc(app.drawnCardsArray);
+  
+  });
+
   //Generate an AR tarot reading
   $("body").delegate("#ar-button", "click", function(){
-    //Draw the tarot cards for a 3-card reading from a 78-card deck
-    const drawnCards = app.drawCardsFunc(78,3);
     
     //Style the body of the html for a fullscreen view with no scrollbars
     $("body").css( {
@@ -1423,54 +1439,61 @@ $( document ).ready(function() {
   
     //Embed a-frame into the page to display AR Reading for a 3-card reading
     $("main").html(`
-      <a-scene arjs>
-        <a-assets>
-          <img id="past-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[0].imagePath.slice(1)}"/>
-          <img id="present-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[1].imagePath.slice(1)}"/>
-          <img id="future-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${drawnCards[2].imagePath.slice(1)}"/>
-        </a-assets>
-        <!-- Display the card reading information above a standard Hiro marker, assumed to be printed out and lying on a flat surface. -->
-        <a-marker-camera preset="hiro">
-          <!-- Display the card image, role, name, and keywords -->
-          <a-entity position="-1 0 0">
-              <!-- Display the card image using the asset management system -->
-              <a-image width=".6" height="1.05" position="0 .4 0" src="#past-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
-              <!-- Display the card role above the card -->
-              <a-text align="center" anchor="center" value="Past" position="0 1.35 0"></a-text>
-              <!-- Display the card name on a colored background below the card role -->
-              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].name}; wrapCount:16" position="0 1.1 0"></a-entity>
-              <!-- Display the card keywords below the card -->
-              <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[0].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
-          </a-entity>
-          <!-- Display the card image, role, name, and keywords -->
-          <a-entity position="0 0 0">
-              <!-- Display the card image using the asset management system -->
-              <a-image width=".6" height="1.05" position="0 .4 0" src="#present-image" rotation="${drawnCards[1].rotation} 0 0"></a-image>
-              <!-- Display the card role above the card -->
-              <a-text align="center" anchor="center" value="Present" position="0 1.35 0"></a-text>
-              <!-- Display the card name on a colored background below the card role -->
-              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].name}; wrapCount:16" position="0 1.1 0"></a-entity>
-              <!-- Display the card keywords below the card -->
-              <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[1].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
+      <div id="ar-reading">
+        <a-scene arjs="debugUIEnabled: false;">
+          <a-assets>
+            <img id="past-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${app.drawnCardsArray[0].imagePath.slice(1)}"/>
+            <img id="present-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${app.drawnCardsArray[1].imagePath.slice(1)}"/>
+            <img id="future-image" src="https://raw.githubusercontent.com/smendez92/AR-tarot/master/${app.drawnCardsArray[2].imagePath.slice(1)}"/>
+          </a-assets>
+          <!-- Display the card reading information above a standard Hiro marker, assumed to be printed out and lying on a flat surface. -->
+          <a-marker-camera preset="hiro">
+            <!-- Display the card image, role, name, and keywords -->
+            <a-entity position="-1 0 0">
+                <!-- Display the card image using the asset management system -->
+                <a-image width=".6" height="1.05" position="0 .4 0" src="#past-image" rotation="${app.drawnCardsArray[0].rotation} 0 0"></a-image>
+                <!-- Display the card role above the card -->
+                <a-text align="center" anchor="center" value="Past" position="0 1.35 0"></a-text>
+                <!-- Display the card name on a colored background below the card role -->
+                <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${app.drawnCardsArray[0].name}; wrapCount:16" position="0 1.1 0"></a-entity>
+                <!-- Display the card keywords below the card -->
+                <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${app.drawnCardsArray[0].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
             </a-entity>
-          <!-- Display the card image, role, name, and keywords -->
-          <a-entity position="1 0 0">
-              <!-- Display the card image using the asset management system -->
-              <a-image width=".6" height="1.05" position="0 .4 0" src="#future-image" rotation="${drawnCards[0].rotation} 0 0"></a-image>
-              <!-- Display the card role above the card -->
-              <a-text align="center" anchor="center" value="Future" position="0 1.35 0"></a-text>
-              <!-- Display the card name on a colored background below the card role -->
-              <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].name}; wrapCount:16" position="0 1.1 0"></a-entity>
-              <!-- Display the card keywords below the card -->
-              <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${drawnCards[2].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
-          </a-entity>
-        </a-marker-camera>
-      </a-scene>
-      
-      <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
-
-      <!-- Make sure we still have access to our JS-->
-      <script src="./assets/javascript/app.js"></script>`
+            <!-- Display the card image, role, name, and keywords -->
+            <a-entity position="0 0 0">
+                <!-- Display the card image using the asset management system -->
+                <a-image width=".6" height="1.05" position="0 .4 0" src="#present-image" rotation="${app.drawnCardsArray[1].rotation} 0 0"></a-image>
+                <!-- Display the card role above the card -->
+                <a-text align="center" anchor="center" value="Present" position="0 1.35 0"></a-text>
+                <!-- Display the card name on a colored background below the card role -->
+                <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${app.drawnCardsArray[1].name}; wrapCount:16" position="0 1.1 0"></a-entity>
+                <!-- Display the card keywords below the card -->
+                <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${app.drawnCardsArray[1].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
+              </a-entity>
+            <!-- Display the card image, role, name, and keywords -->
+            <a-entity position="1 0 0">
+                <!-- Display the card image using the asset management system -->
+                <a-image width=".6" height="1.05" position="0 .4 0" src="#future-image" rotation="${app.drawnCardsArray[0].rotation} 0 0"></a-image>
+                <!-- Display the card role above the card -->
+                <a-text align="center" anchor="center" value="Future" position="0 1.35 0"></a-text>
+                <!-- Display the card name on a colored background below the card role -->
+                <a-entity geometry="primitive: plane; width: .6; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${app.drawnCardsArray[2].name}; wrapCount:16" position="0 1.1 0"></a-entity>
+                <!-- Display the card keywords below the card -->
+                <a-entity geometry="primitive: plane; width: .8; height: .3" material="color: rgb(0,87,72)" align="center" anchor="center" text="color: rgb(242,242,207); align: center; value: ${app.drawnCardsArray[2].keywords.join(', ')}; wrapCount:20" position="0 -.3 0"></a-entity>
+            </a-entity>
+          </a-marker-camera>
+        </a-scene>
+        
+        <!-- Create a button that will allow us to move onto the 2d reading from the AR display -->
+        <div style="bottom:10px;" class="position-absolute text-center width-100pc z-1">  
+          <button class="background-image-cardboard border-radius-10px display-inline-block font-size-1p75em font-special-elite padding-bottom-p25em padding-left-p25em padding-right-p25em z-1" id="read-more-button">
+            Read More.
+          </button>
+          <button class="background-image-cardboard border-radius-10px display-inline-block font-size-1p75em font-special-elite padding-bottom-p25em padding-left-p25em padding-right-p25em z-1" id="restart-button">
+            Restart.
+          </button>
+        </div>
+      </div>`
     );
   });
 });

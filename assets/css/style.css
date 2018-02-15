@@ -338,6 +338,9 @@ button:hover{
 .width-75pc{
 	width: 75%;
 }
+.width-100pc{
+	width: 75%;
+}
 .width-190px{
 	width: 190px;
 }
@@ -355,9 +358,6 @@ button:hover{
 }
 .z-1{
 	z-index: 1;
-}
-.z-1000{
-	z-index: 4000;
 }
 
 /* Responsive sizes */
